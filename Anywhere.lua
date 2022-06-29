@@ -1,0 +1,10 @@
+shared.stop = true -- stops the player at any time if true
+-- CONFIG:
+shared.ftime = 2*58 -- time in seconds for the song to finish (extended by |)
+shared.delay = nil -- delay overides the ftime
+shared.tempo = nil -- delay overides the delay
+shared.nospacedelay = true
+
+shared.scr = [[
+e t u [ue860] uuu uuo pu|[ue860] uuu uuo pue uu[w975] y| |e uu[w975] y| |[ue860] uuu uuo pu|[ue860] uuu uuo pue uu[w975] y| |e uu[w975] y| |e|[r860] t| |e|[r860] t||[wo975]oou y| |[wt975]yuu y| |[q96] p p pp o|[yw975]y[w975] o o oo i i [wut850] [wut850] u u uo t t [tr] [e860]|||[q96] p p pp o|[yw975]y[w975] o o oo i i [wut850] [wut850] u u uo t t [tr] [qe864]| |e e u [uq9]yy| |t t t [wtr]rr| |[wu80] u u u [wto]|[trqe] e 6| |s s f [qf9]dd| |s s s [wsr]aa| |[wf80] f f f [wth]|[tqea] p 6| |9|[uqe]|[uq9] uu[u96]|[u64] uu[u75] u[u97] u[wu9] u[wro] p [wt]|[wt0] yo[t80]|[t85] yo[t86]|[r80] r [e0]|f|[qfe]|[qf9] ff[f96]|[f64] ff[f75] f[f97] f[wf9] f[wrh] j [wts]|[ws0] dh[s80]|[s85] dh[s86]|[a80] a [pe0]|[te]|[ue860] uuu uuo pu|[ue860] uuu uuo pue uu[w975] y| |e uu[w975] y| |[ue860] uuu uuo pu|[ue860] uuu uuo pue uu[w975] y| |e uu[w975] y| |e|[r860] t| |e|[r860] t||[wo975]oou y| |[wt975]yuu y| |[q96] p p pp o|[yw975]y[w975] o o oo i i [wut850] [wut850] u u uo t t [tr] [e860]|||[q96] p p pp o|[yw975]y[w975] o o oo i i [wut850] [wut850] u u uo t t [tr] [qe864]| |e e u [uq9]yy| |t t t [wtr]rr| |[wu80] u u u [wto]|[trqe] e 6| |s s f [qf9]dd| |s s s [wsr]aa| |[wf80] f f f [wth]|[tqea] p 6| |9|[uqe]|[uq9] uu[u96]|[u64] uu[u75] u[u97] u[wu9] u[wro] p [wt]|[wt0] yo[t80]|[t85] yo[t86]|[r80] r [e0]|f|[uqe]|[uq9] uu[u96]|[u64] uu[u75] u[u97] u[wu9] u[wro] p [wt]|[wt0] yo[t80]|[t85] yo[t86]|[r80] r [e0]|[te]|[q96] p p pp o|[yw975]y[w975] o o oo i i [wut850] [wut850] u u uo t t [tr] [e860]|||[q96] p p pp o|[yw975]y[w975] o o oo i i [wut850] [wut850] u u uo t t [tr] [qe864]| |e e u [uq9]yy| |t t t [wtr]rr| |[wu80] u u u [wto]|[trqe] e 6|||[uqe]|[uq9] uu[u96]|[u64] uu[u75] u[u97] u[wu9] u[wro] p [wt]|[wt0] yo[t80]|[t85] yo[t86]|[r80] r [e0]|f
+]]
