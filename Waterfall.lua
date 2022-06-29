@@ -1,0 +1,10 @@
+shared.stop = true -- stops the player at any time if true
+-- CONFIG:
+shared.ftime = 4*06 -- time in seconds for the song to finish (extended by |)
+shared.delay = nil -- delay overides the ftime
+shared.tempo = nil -- delay overides the delay
+shared.nospacedelay = true
+
+shared.scr = [[
+p f k h j f s f p f k l z l k h p f k h j f s f p f k l z l k h [qp] f k h j f s f [p0] f k l z l k h [pe] f k h j f s f p f k l z l k h [j60] x [eb] v [teb] x [ze] x [rk9] [xt0] [yqc] [rk9] [tl0] x b [vr] b [xe]w[zq] x [rk9] [xt0] [yvq] [unW] [zte] x [wvr] n [b0] x [ze0] x [wk9] x [zq8] x [wk7] [zq6] [v50] [b9] [n5] [ve7] [b80] x z [v7] [k95] [ql] [j60] x [eb] v [teb] x [ze] x [rk9] [xt0] [yqc] [rk9] [tl0] x b [vr] b [xe]w[zq] x [rk9] [xt0] [yvq] [unW] [zte] x [wvr] n [b0] x [ze0] x [wk9] x [zq8] x [wk7] [zq6] [v50] [b9] [n5] [ve7] [b0] x z a [ws] [wa] [ped]| [ud]| t d [ywa]| [woa] s [ywa] s [qia]| e d [yq] q [se]ap y a [us] [wa] [ped]| [ud]| t d [ywa]| [woa] s [ywa] s [qia]| e d [yq] q [se]ap y a [us] [oa] [ped]| [ud]| t d [ywa]| [woa] s [ywa] s [qia]| e d [yq] q [se]ap y a [us] [wa] [ped]| [ud]| t d [ywa]| [woa] s [ywa] s [qia]| e d [yq] q [pe]| [yw] p [oP] s [dE]|||g h j| h| g| [p6] f k h j f s f p f k l z l k h p f k h j f s f p f k l z l k h p f k h j f s f p f k l z l k h [qp] f k h j f s f [p0] f k l z l k h [pe] f k h j f s f p f k l z l k h [j60] x [eb] v [teb] x [ze] x [rk9] [xt0] [yqc] [rk9] [tl0] x b [vr] b [xe]w[zq] x [rk9] [xt0] [yvq] [unW] [zte] x [wvr] n [b0] x [ze0] x [wk9] x [zq8] x [wk7] [zq6] [v50] [b9] [n5] [ve7] [b80] x z [v7] [k95] [ql] [j60] x [eb] v [teb] x [ze] x [rk9] [xt0] [yqc] [rk9] [tl0] x b [vr] b [xe]w[zq] x [rk9] [xt0] [yvq] [unW] [zte] x [wvr] n [b0] x [ze0] x [wk9] x [zq8] x [wk7] [zq6] [v50] [b9] [n5] [ve7] [b0] x z a [ws] [wa] [ped]| [ud]| t d [ywa]| [woa] s [ywa] s [qia]| e d [yq] q [se]ap y a [us] [wa] [ped]| [ud]| t d [ywa]| [woa] s [ywa] s [qia]| e d [yq] q [se]ap y a [us] [oa] [ped]| [ud]| t d [ywa]| [woa] s [ywa] s [qia]| e d [yq] q [se]ap y a [us] [wa] [ped]| [ud]| t d [ywa]| [woa] s [ywa] s [qia]| e d [yq] q [pe]| [yw] p [oP] s [dE]|||g h j| h| g| [p6] f k h j f s f p f k l z l k h
+]]
