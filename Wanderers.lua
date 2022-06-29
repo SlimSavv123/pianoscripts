@@ -1,0 +1,10 @@
+shared.stop = true -- stops the player at any time if true
+-- CONFIG:
+shared.ftime = 4*02 -- time in seconds for the song to finish (extended by |)
+shared.delay = nil -- delay overides the ftime
+shared.tempo = nil -- delay overides the delay
+shared.nospacedelay = true
+
+shared.scr = [[
+euas h f|||[kd] hh d d| as[ed]uas|hf| sod [ea]yuo| sp|||60rt u o| t y|48we y o p s aop[f6]0ertrw[ed][uoed6] 09[ohd]0|[sqoh4]|[spj]|[yod] [30][uof]|[ura]| [utsp962]|||[yd]| [oh]| [ka]|||p [f6]3[d7][d8] 0s[wd]|fd s|[f4]1[d5][d6] [s8] [s0]| f [d5]2[d5][s8]|[d9][a7]2 [a5]p[w7] op[962]|6 69w[Q62] 6 [e9] p [sf6]0[rd][ted] [ut][sp][utpd]|[up][up][e80][sp] p[sf4]8[wsh][sqhe] [te]j[utsfe]s 0 [860] [sf] [sf5]9[eda][wrda] [ywr]s[yso]|[oa]s[w9][da]|[oea96]| 6 [s9][wp][Q62]| [te9] 6 [pe2] 6[q9] e[tsq9][uf9][yd3] 70[wra0] 7 [pe2] 6[q9] e[tsq9][uf9][yd3] 70[wroh0] 7 [uf2] 69[qe9] [pe] [yqpje]| [ka974]| [ka730] 70rupa[kaWO30] [uf]|[sl]|[ka4]8qet [sl][ka][a5]9wry [sl][ka][a6]0e[tpj][utfe]psf[upjf] [ts] [e860][sl]|[ka4]8qe[tqe]e[usl][tka][a5]9wr[ywroh] [975][pj][uf6] 0e[te]e[ut]e[utp] [ts]|[sl]|[ka4]8qet [sl][zd][d3]70e[rka]| [ka6]0rt[ute] [sl][pj][p5]0rt[uto] [pj] [xf4]8q[ztqed][ztqed] [sl] [qpj4]8qe[tqohe] [pj] [pj3]70rupap[ka0]WruO|[30]| [ke]uas hl[jf]|||[kd] hh d d|||euas h f|||[zd]|||0et[r4]14414[t4][r4]525525[t5][r5]63[e6][60]3680[e80] 8 [860]t|[te4]14414[te4]4[yr5]255[ut2]555[wr6]3[r6]t[u6]o[a3]6[t6]6[e60] 6et[to]|[yr4]14414[ut4]4[wr5]2[t5][yr5][r2]5[yo5]5[ya6]3[a6]s[a6]p[f3]s[a6]p[j6]f[s6]p[l6]j[f3]s[p6]u[y6][y3][u6][e6][t6][yr4]14414[ut4][yr4]4| [y864]uet[y5]25525[t5][o5]5| [yw97]| [ur63] 70eruoa h k| [je]usfd|||[je]oskh|||[je]osfd|||z|||[upf]|[slj]|[kfa4]8q[jeb][tjb] [slf][kfa]59w[rnk][ynk] [slf][kfa][fa6]0[ue]p[spe]f[utje0]lxnbxlj[xtpe]ljf[tso] [e860][slj]|[qkfa4]8qe[tqe]e[uslf][tkfa][w5]9wr[ywrohd] [975][pj][uspfe6] 0e[te]e[ut]e[utp] [tso]|[slj]|[kfa4]8[tq]eut[slfe][zthd][d3]70[e0][rkfa]ur0[kfa6]0[ue]tou[tsl][spojf][utpe]tete0[wspjf5] [xjf4]8q[ztqjed][ztqjed] [sl] [sqpj4]8qe[tsqohe] [spj] [spjf3]70rupap[kfa0]WruO|[30]| [qkfa84] et i[sl][pj]e tu[uka]| [ka730] er[uf] o [zd]| [r70]| euas h f|||[qd]fp| d q| d [wpd]|||f| j| k| fjkx
+]]
