@@ -1,0 +1,10 @@
+shared.stop = true -- stops the player at any time if true
+-- CONFIG:
+shared.ftime = 3*13 -- time in seconds for the song to finish (extended by |)
+shared.delay = nil -- delay overides the ftime
+shared.tempo = nil -- delay overides the delay
+shared.nospacedelay = true
+
+shared.scr = [[
+[sq][td][yd][td][od][td][yd][ts][sq][td]ytoty[ts][s8][wd][td][wd][od][wd][td][ws][f8][wd]twowt[wd]f[d0]ryr[od]ryr[d0][sr][yd][sr][of]r[ys][sr]6[p0]e0t0[spe]060t0r0e[s0][sq][td][yd][td][od][td][yd][ts][sq][td]ytoty[ts][s8][wd][td][wd][od][wd][td][ws][f8][wd]twowt[wd]f[d0]ryr[od]ryr[d0][sr][yd][sr][of]r[ys][sr]6[p0]e0t0[spe]060t0[ra]0[se][h0]qtytot[yf]tqtyt[oa]t[ys][thf]8wtwow[tsf]w8wtwowt[wd]f[d0]ryrory[rd]f[d0]ryror[ys][rd][f6][d0][ed][s0][td]0[se][s0]6[p0]t0r0[se]0[qhf]tytot[ysf]tqtytot[ys]t[hf8]wtwow[tsf]w8wtwowt[wk]l[k0]ryrory[rk]l[k0]ryrory[rk]l[uk] j H g [uf0] sssds[hf]4 [sf][hf]q[sf] [ut] [ut]s[uts]ds[hf]1[sf] [hf]w[sf] [ut] [ut] [uth]hhl[k3]h f[yrd] l[k0]h f[ywrd] sd6 sd[e0]ssp6 s[tse]ds[hf]4 [sf][hf]q[sf] [ut] [ut]s[uts]ds[hf]1[sf] [hf]w[sf] [ut] [ut] [uth]hhl[k3]h f[yrd] l[k0]h f[ywrd] sd6 sd[e0]ssp6|[wr0] to4|[80] [80] [80]tt[r80] t[to]%|[W8] [tiW8] [W8] [W8] tt[to^][to] [ti][qE] t [to^][to] [ti][qE] o [u8]|[wt] [wt] [wt] [wtr] to4|[80] [80] [80]tt[r80] t[to]%|[W8] [tiW8] [W8] [W8] tt[to^][to] [ti][qE] t [to^][to] [ti][qE] o [ut8] w tyuyt w q w ghs8ghs ghs ghs hHgwhHg hHg hHg ghs8ghs ghs ghs ghf0gh[wf] ghf ghf [wutg]hs ghs ghs ghs [thWO]Hg hHg hHg hHg [tigE]hs ghs ghs ghs [utog]hf ghf ghgfdsas[qhf]tytot[ysf]tqtytot[ys]t[hf8]wtwow[tsf]w8wtwowt[wk]l[k0]ryrory[rk]l[k0]ryrory[rk]l[uk]lklklklklklklkl[uk0] sssds[hf]4 [sf][hf]q[sf] [ut] [ut]s[uts]ds[hf]1[sf] [hf]w[sf] [ut] [ut] [uth]hhl[k3]h f[yrd] l[k0]h f[ywrd] sd6 sd[e0]ssp6 s[tse]ds[hf]4 [sf][hf]q[sf] [ut] [ut]s[uts]ds[hf]1[sf] [hf]w[sf] [ut] [ut] [uth]hhl[k3]h f[yrd] l[k0]h f[ywrd] sd6 sd[e0]ssp6|[wr0] to4|[80] [80] [80]tt[r80] t[to]%|[W8] [tiW8] [W8] [W8] tt[to^][to] [ti][qE] t [to^][to] [ti][qE] o [u8]|[wt] [wt] [wt] [wta] shq|[ut] [ut] [ut]ss[uta] s[sh]W|[tO] [tsgO] [tO] [tO] ss[shE][sh] [sg][iP] s [shE][sh] [sg][iP] h [sf8] w td[yf]d[us]
+]]

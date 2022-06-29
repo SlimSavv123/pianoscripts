@@ -1,0 +1,11 @@
+
+shared.stop = true -- stops the player at any time if true
+-- CONFIG:
+shared.ftime = 3*14 -- time in seconds for the song to finish (extended by |)
+shared.delay = nil -- delay overides the ftime
+shared.tempo = nil -- delay overides the delay
+shared.nospacedelay = true
+
+shared.scr = [[
+[e60] 6|56|3 5[e60] 6|56 353[w5][e60] 6|56|3 5[qe2] 2|12 61 7[e60] 6|56|3 5[e60] 6|56 353[w5][e60] 6|56|3 5[qe4] 1|[e4][wr5] 35[t3][y5][ue6] 6|3[te6]|[ut6] 6[yr5] 5|25|[yr] 5[ut1] 1| 1|1 1[ye2] 2|62 6[t10] [y7][ue6] 60 3[te6]|[ut60] 6[ywr5] 5y 2[wr5]|[yro] 5[wut1] 1w[ye][wt][e10]|[w1] 1[yq2] 2[te] 2[rW3] 3[e50]3[r5][t6] 6r [t3][r6]|[e6] 3[ue6] 6|36|6 [u6][yu2] [i2] u6[ye2] [wt]2[rq]6[qe2] 2|62 61 7[te6] 6r [t3][r6] e6w3[te6] 6[ue] 3[pe6]|[ro6] 6[tie2] 2|62|[ye2] 6[q92] 2[ye] 6[ye2]|[y6]t[r5][te4] 14 1[te4] [wr1][te4] [ut4][yr5] 2[e5] 2[wr5] 2[tq5] 5[r30] 5[w7] 5[wt3] 5[r70] 5[e60] 36 3[te6] 6[te5] [yr5][ute4] 14 1[te4] [wr1][te4] [ut4][yr5] 2[w5] 2[wt5] 2[ye5] 5[ur3] 5[w7] 5[wr3] 5[ur7] [ti5][ur3] %7 %[uO3] %[y7] %[ue6] 60 3[te6]|[ut60] 6[ywr5] 5w 2[wr5]|[ywr] 5[wut1] 1[wt]|[wt1]|[wt1] 1[yq2] 2[te] 2[yr3] 3[ut50]3[wuo5][upe6] 60 3[ute6]|[utp60] 6[ywro5] 5[yw] 2[wr5]|[yro] 5[wut1] 1w[ye][wt][e10]|[w1] 1[yq2] 2[tie] 2[urW3] 3[50]35[e60] 6|56|3 5[e60] 6|56 353[w5][e60] 6|56|3 5[qe2] 2|12 61 7[e60] 6|56|3 5[e60] 6|56 353[w5][e60] 6|56|3 5[qe4] 1|[e4][wr5] 35[t3][y5][ue6] 6|3[te6]|[ut6] 6[yr5] 5|25|[yr] 5[ut1] 1| 1|1 1[ye2] 2|62 6[t10] [y7][ue6] 60 3[te6]|[ut60] 6[ywr5] 5y 2[wr5]|[yro] 5[wut1] 1w[ye][wt][e10]|[w1] 1[yq2] 2[te] 2[rW3] 3[e50]3[r5][t6] 6r [t3][r6]|[e6] 3[ue6] 6|36|6 [u6][yu2] [i2] u6[ye2] [wt]2[rq]6[qe2] 2|62 61 7[te6] 6r [t3][r6] e6w3[te6] 6[ue] 3[pe6]|[ro6] 6[tie2] 2|62|[ye2] 6[q92] 2[ye] 6[ye2]|[y6]t[r5][te4] 14 1[te4] [wr1][te4] [ut4][yr5] 2[e5] 2[wr5] 2[tq5] 5[r30] 5[w7] 5[wt3] 5[r70] 5[e60] 36 3[te6] 6[te5] [yr5][ute4] 14 1[te4] [wr1][te4] [ut4][yr5] 2[w5] 2[wt5] 2[ye5] 5[ur3] 5[w7] 5[wr3] 5[ur7] [ti5][ur3] %7 %[uO3] %[y7] %[ue6] 60 3[te6]|[ut60] 6[ywr5] 5w 2[wr5]|[ywr] 5[wut1] 1[wt]|[wt1]|[wt1] 1[yq2] 2[te] 2[yr3] 3[ut50]3[wuo5][upe6] 60 3[ute6]|[utp60] 6[ywro5] 5[yw] 2[wr5]|[yro] 5[wut1] 1w[ye][wt][e10]|[w1] 1[yq2] 2[tie] 2[urW3] 3[50]35[e60]
+]]
