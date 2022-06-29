@@ -1,0 +1,10 @@
+shared.stop = true -- stops the player at any time if true
+-- CONFIG:
+shared.ftime = 2*32 -- time in seconds for the song to finish (extended by |)
+shared.delay = nil -- delay overides the ftime
+shared.tempo = nil -- delay overides the delay
+shared.nospacedelay = true
+
+shared.scr = [[
+6| [te0]| 3| [ywr9]| 2| [tqe]| 3 @ 2 3 6| [te0]| 3| [ywr9]| 2| [tqe]| 3| WruO|[p6]| [ute0]| [o3]| [ywr9]| [t2] [rq] [e8] [r9] [e2]| [r730%]| [t1]| [teY80]u| [y3] [w0] [wr97] [eQ] 2| [Q98]|[62][82] [72] [861][972][861] [p6]| [ute0]| [o3]| [ywr9]| [t2] [rq] [e8] [r9] [e2]| [r730%]| [t1]| [teY80]u| [y3] [w0] [wr97] [eQ] 2| [Q98]|[62][82] [72] [861][972][861] [utp6] [rYO] [utp860] [rYO] [yro3] [yeI] [yro75]| [yeI2] [yeI] [ute86][yI]21[ute6] [63] [63] [52] [utp6] [rYO] [utp860] [rYO] [yro3] [yeI] [yro75]| [yeI2] [yeI] [ue86]t21[e6] [63] [63] [52] [spjf6] [aOHD] [spjf860] [aOHD] [ohda3] [pdIG] [ohda750] w [pdQIG2] [pdIG] [uspf86][dIG]w1[uspf6] [63] [63] [52] [spjf6] [aOHD] [spjf860] [aOHD] [ohda3] [pdIG] [ohda75]| [yp]s[dI]f[pG]G fG|yIps f G [yh]IpG f s [w5] [Q$] [30] [81] 6| [te0]| 3| [ywr9]| 2| [tqe]| 3 @ 2 3 6| [te0]| 3| [ywr9]| 2| [tqe]| 3| WruO|[p6]| [ute0]| [o3]| [ywr9]| [t2] [rq] [e8] [r9] [e2]| [r730%]| [t1]| [teY80]u| [y3] [w0] [wr97] [eQ] 2| [Q98]|[62][82] [72] [861][972][861] [p6]| [ute0]| [o3]| [ywr9]| [t2] [rq] [e8] [r9] [e2]| [r730%]| [t1]| [teY80]u| [y3] [w0] [wr97] [eQ] 2| [Q98]|[62][82] [72] [861][972][861] [utp6] [rYO] [utp860] [rYO] [yro3] [yeI] [yro75]| [yeI2] [yeI] [ute86][yI]21[ute6] [63] [63] [52] [utp6] [rYO] [utp860] [rYO] [yro3] [yeI] [yro75]| [yeI2] [yeI] [ue86]t21[e6] [63] [63] [52] [spjf6] [aOHD] [spjf860] [aOHD] [ohda3] [pdIG] [ohda750] w [pdQIG2] [pdIG] [uspf86][dIG]w1[uspf6] [63] [63] [52] [spjf6] [aOHD] [spjf860] [aOHD] [ohda3] [pdIG] [ohda75]| [yp]s[dI]f[pG]G fG|yIps f G [yh]IpG f s [w5] [Q$] [30] [81]
+]]
