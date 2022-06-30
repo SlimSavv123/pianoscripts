@@ -1,0 +1,10 @@
+shared.stop = true -- stops the player at any time if true
+-- CONFIG:
+shared.ftime = 2*35 -- time in seconds for the song to finish (extended by |)
+shared.delay = nil -- delay overides the ftime
+shared.tempo = nil -- delay overides the delay
+shared.nospacedelay = true
+
+shared.scr = [[
+[yd5]aoy[tpi9] [tpi9]2[ts9][yoa5] [yoa][tpi9] 929[yd5]aoy[tpi9] [tpi9]2[ts9][yoa5] [yoa]! 232[yd5]aoy[tpi9] [tpi9]2[ts9][yoa5] [yoa][tpi9] 929[yd5]aoy[tpi9] [tpi9]2[ts9] @ 3 4 $[yd5] a[o9]u[d2][a4][o2][a5] o9a24[p2][o5]opo[i9]o24[i2][o5]oad[f9]g242[yd5] a[o9]u[d2][a4][o2][a5] o9a24[p2][o5]opo[i9]o24[i2][o5]oad[f9]g2! [f1] s[p8][I2]ps[f9][d5]w[hQG] [d3]0[aP9] [s2] p[I8][y2]Ip[s9][a5][wa]s[aQ][qp][a0](9*[f3] s[p8][I2]ps[f9][d5]w[hQG] [d3]0[aP9] [p4][qp]a[p4][qo][p4]q4[qo][p9][p8]as[d7][f6] [spG92] [yd5] a[o9]u[d2][a4][o2][a5] o9a24[p2][o5]opo[i9]o24[i2][o5]oad[f9]g242[yd5] a[o9]u[d2][a4][o2][a5] o9a24[p2][o5]opo[i9]o24[i2][o5]oad[f9]g2! [f1] s[p8][I2]ps[f9][d5]w[hQG] [d3]0[aP9] [s2] p[I8][y2]Ip[s9][a5][wa]s[aQ][qp][a0](9[f3] s[p8][I2]ps[f9][d5]w[hQG] [d3]0[aP9] [p4][qp]a[p4][qo][p4]q4[qo][p9][p8]as[d7][f6] [spG92] [yd5]aoy[tpi9] [tpi9]2[ts9][yoa5] [yoa][tpi9] 929[yd5]aoy[tpi9] [tpi9]2[ts9][yoa5] [yoa]! 232[yd5]aoy[tpi9] [tpi9]2[ts9][yoa5] [yoa][tpi9] 929[yd5]aoy[tpi9] [tpi9]2[ts9] @ 3 4 $[g^] d[qP]o[g4][d%][P4][d^] Pqd4%[s4][^P]PsP[qO]P4%[O4][^P]Pdg[qh]H4%4[g^] d[qP]o[g4][d%][P4][d^] Pqd4%[s4][^P]PsP[qO]P4%[O4][^P]Pdg[qh]H4%4[f6] S[p0]I[f3][S5][p3][S6] p0S35[a3][p6]pap[o0]p35[o3][p6]pSf[G0]h353[D%] s[O(]i[D@][s$][O@][s%] O(s@$@l[zhc5][xl][zJ]khd[hS]s[dP]aou[oT]t[yE]rw9 579qeTuowryipSfhoadgjLxvhkzcbLxv[vmb][vC][vmb][vC][vmb][vC][vmb][vC][vmb][vC][vmb][vC][vmb][vC][vmb][vC] | [Q6]| [9$]| [53] | x ljGjlxzCv zJk l jGdGjlkklkjk| x ljGjlxz [vC] z [kJ] jjkjhj|hjjklzx [ljC] [yd5]aoy[tpi9] [tpi9]2[ts9][yoa5] [yoa][tpi9] 929[yd5]aoy[tpi9] [tpi9]2[ts9][yoa5] [yoa]! 232[yd5]aoy[tpi9] [tpi9]2[ts9][yoa5] [yoa][tpi9] 929[yd5]aoy[tpi9] [tpi9]2[ts9] [sjg9]2[sl9] [lcb9]2[ml9] [sjg9]2[sl9] [tpi9]2[ts9][yoia5]wQ098765[pida]6[pida7]5[updP8]18$4[spoY]5[spoY6]4[ysi^O]^^3@[oiTP]4[oiTP5]@2[utpI]3[utpI$]2[yuro5]272[yuro5] [urqphfS] | 5
+]]
