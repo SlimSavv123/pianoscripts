@@ -1,0 +1,10 @@
+shared.stop = true -- stops the player at any time if true
+-- CONFIG:
+shared.ftime = 1*47 -- time in seconds for the song to finish (extended by |)
+shared.delay = nil -- delay overides the ftime
+shared.tempo = nil -- delay overides the delay
+shared.nospacedelay = true
+
+shared.scr = [[
+4 q @3 4% 4 4(834 q @4@% 48177@34 q4@3 % 4 4(87! * 29 @ 15 4q@([ig4]s[qO][oi]@3O4% 4 4(83[i4] qo@4[O@]% 48177@3[i4] q[o4]@3O% 4 4(87[u!] i29o@ 15 [sl4][qH][g@][s(][siO4] qo@3O4% [P4] [O4]([o8]3[siO4] qo@4[sO@]% 4[P8]1[sO7][sO7][o@]3[usO4] q[i4]@3o% 4O [o4]([i8]7[SO!][SO] 29[sO]@ 15 [slH4][sqlH]@([sigO4] q 4 q [sO4] q [sH4] q [ihSO!] * ! [iO] [g!] [O] [iSOH!][iO][g*] [soh5] w 5 w [g5] w [s5] w [slf1] [g8] [h1] [s8] [h1] [s8] [sl1]s[s8] [igOH4] [sq] [lH4] q [LJ4] q [lH4] q [kH!] * ! [iO*] [h!] * [iO!][iO][h*]H[PJ5] w [g5] w [H5] w [h5] [wg] [slf1] [g8] [h1] [s8] [h1] [s8] [sl1]s[s8] [tW4] q 4 q [E4] q [t4] q [iT!] * ! [iT] ! [W] [iTO!][iTO]* [uo5] w 5 w 5 [wt] [i5] w [uso1] [i8] [o1] [so8] [o1] [t8] [so1][so][t8] [ti4] q [t4] q [S4] q [s4] q [tiP!] * ! [tsi] [P!] [s] [tiP!][ti][i*] [sO5] w [o5] w 5 w [i5] w [us1] [i8] [o1] [s8] [o1] [t8] [so1]s[o8] [i4] q @3 4% 4 4(834 q @4@% 48177@34 q4@3 % 4 4(87! * 29 @ 15 4q@([ig4]s[qO][oi]@3O4% 4 4(83[i4] qo@4[O@]% 48177@3[i4] q[o4]@3O% 4 4(87[u!] i29o@ 15 [sl4][qH][g@][s(][siO4] qo@3O4% [P4] [O4]([o8]3[siO4] qo@4[sO@]% 4[P8]1[sO7][sO7][o@]3[usO4] q[i4]@3o% 4O [o4]([i8]7[SO!][SO] 29[sO]@ 15 [slH4][sqlH]@([sigO4] q 4 q [sO4] q [sH4] q [ihSO!] * ! [iO] [g!] [O] [iSOH!][iO][g*] [soh5] w 5 w [g5] w [s5] w [slf1] [g8] [h1] [s8] [h1] [s8] [sl1]s[s8] [igOH4] [sq] [lH4] q [LJ4] q [lH4] q [kH!] * ! [iO*] [h!] * [iO!][iO][h*]H[PJ5] w [g5] w [H5] w [h5] [wg] [slf1] [g8] [h1] [s8] [h1] [s8] [sl1]s[s8] [tW4] q 4 q [E4] q [t4] q [iT!] * ! [iT] ! [W] [iTO!][iTO]* [uo5] w 5 w 5 [wt] [i5] w [uso1] [i8] [o1] [so8] [o1] [t8] [so1][so][t8] [ti4] q [t4] q [S4] q [s4] q [tiP!] * ! [tsi] [P!] [s] [tiP!][ti][i*] [sO5] w [o5] w 5 w [i5] w [us1] [i8] [o1] [s8] [o1] [t8] [so1]s[o8] i
+]]
