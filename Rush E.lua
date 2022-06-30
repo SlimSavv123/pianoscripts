@@ -1,0 +1,620 @@
+shared.stop = true -- stops the player at any time if true
+-- CONFIG:
+shared.ftime = 5*60 -- time in seconds for the song to finish (extended by |)
+shared.delay = nil -- delay overides the ftime
+shared.tempo = nil -- delay overides the delay
+shared.nospacedelay = true
+
+shared.scr = [[
+      u       Y       i       u       y       i       u       O 
+      u       O       O       u       O    [uO]       O       u 
+      O       p       p       u       u       p       p       p 
+   [up]       p       p       p       u       p       p       p 
+      p       u       u       p       p    [pS]    [up]       S 
+   [pS]    [Sp]    [pS]       u       u       p       S    [Sp] 
+   [Sp]    [up]       u       u       u       u       u       u 
+      u    [uf]    [uf]   [fxu]   [xuf]  [fxu0]  [x0uf] [u0x3f] 
+[0xfu3] [ux30f] [x0uf3] [xu30f] [ux30f] [x03uf] [3u0xf] [3fux0] 
+[0xf3u] [3fx0u] [3f0xu] [03xfu] [f03xu] [u3fx0] [30fxu] [x30fu] 
+[3xfu0] [xuf30] [u03xf]       6    [08]       3    [08]       3 
+      $       %       6    [80]       3    [08]    [u6]       u 
+  [0u8]       u    [3u]       u   [0u8]       u    [u6]       u 
+  [u80]       u    [3u]       u   [u08]       u    [u6]       u 
+  [u08]       u    [3u]       i   [8u0]       Y    [u6]   [p80] 
+   [s3]    [08]    [d%]       d   [d90]       d    [3d]       s 
+  [9a0]       d    [s6]       s   [0s8]       s    [s3]       a 
+  [80p]       s    [a7]       a   [(ar]       a    [$I]   [(ra] 
+ [70WO]    [30]       $       %    [6u]       u   [0u8]       u 
+   [3u]       u   [80u]       u    [u6]       u   [u08]       u 
+   [u3]       u   [u08]       u    [u6]       i   [08u]       Y 
+   [u3]   [8p0]       s    [f6]   [08j]    [3l]    [08]    [9z] 
+      l   [kqr]       z    [l8]       k   [t0j]       l    [k7] 
+      j   [H9W]       k    [6j]       f   [se8]       p   [g03] 
+      f   [Q$d]       s   [aW%]       p   [O03]       a   [ep6] 
+      3       $       %    [6u]       u   [u80]       u    [u3] 
+      u   [0u8]       u    [u6]       u   [0u8]       u    [u3] 
+      u   [0u8]       u    [6u]       u   [u80]       u    [u3] 
+      i   [8u0]       Y    [u6]   [p80]    [s3]    [80]    [%d] 
+      d   [d09]       d    [d3]       s   [0a9]       d    [6s] 
+      s   [8s0]       s    [s3]       a   [8p0]       s    [7a] 
+      a   [a(7]       a    [I$]   [(a7]  [07OW]    [30]       $ 
+      %    [6u]       u   [08u]       u    [u3]       u   [u08] 
+      u    [u6]       u   [u08]       u    [3u]       u   [80u] 
+      u    [6u]       i   [u80]       Y    [3u]   [p80]       s 
+   [f6]   [8j0]    [l3]    [80]    [9z]       l   [krq]       z 
+   [8l]       k   [j0t]       l    [7k]       j   [WH9]       k 
+   [6j]       f   [se8]       p   [03g]       f   [$dQ]       s 
+  [%aW]       p   [30O]       a   [ep6]       6       7    [!*] 
+  [d29]    [eq]       S    [6d]   [efq]    [g9]   [efq]    [d6] 
+  [qeg]    [f8]    [e0]       d    [6s]   [de0]    [f8]    [0e] 
+      6   [s0e]    [a7]    [W9]       P    [a3]   [9sW]    [7d] 
+  [W9s]    [a3]   [Wd9]       n [BjrZkxb@!atE7ypPcdD*1qvTgYzJfO%oGI94h8^5HLne32Su6w$s(C0QlVWi]       b       V       v 
+      C       c       x       Z [zhW@rtL!%91^6lcuj*2V8kdw7bxSav4(3nZp50TECf$ygsiQeIDoGqOYHPBJ]       L       l       k 
+      J       j       H       h [G18!xTWbBgh7pzk0qfcs6e%5ZnJj3Sw*VP^2Ca$l@oDOL(iuIy9YtvEH4rdQ]       g       f       D 
+      d       S       s [6pP07(k9@*xQzaqgy2rHt3eZE^lw!T$f5cnjhC1JYsb%4VBuIiWOvoLSd8DG] [ywj01tBo74ebdvVcCHxk3JE52!uDhWqG*6fgI9(^Oal%TYp@sLr8Qi$SzPnZ]   [6je]       f    [6s] 
+      p    [d9]    [qe]       S    [d6]   [feq]    [g9]   [efq] 
+   [6d]   [qeg]    [8f]    [e0]       d    [6s]   [0de]    [8f] 
+   [e0]    [6j]    [0e]       7   [dqe]       9   [eqg]  [3Wf0] 
+  [81s]   [92d]    [7a]    [6p] [0f3Wr] [j6et0]       3       $ 
+      %   [u6f]    [uf]  [f80u]    [fu]   [3uf]   [xfu]       x 
+[x08fu]       x   [xuf]       x  [x6fu]       x   [xfu]       x 
+[x8uf0]       x   [xuf]       x  [xfu3]       x   [xuf]       x 
+[x08uf]       x   [xuf]       x  [xuf6]       x   [xfu]       x 
+[x8uf0]       x   [xfu]       x  [x3fu]    [ig]  [u80f]    [YD] 
+  [uf6]  [8jp0]   [sl3]    [80]   [z%d]    [zd]  [0dz9]    [zd] 
+  [3zd]    [sl]  [90ak]    [dz]   [ls6]    [ls]  [l80s]    [ls] 
+  [3ls]    [ak]  [p8j0]    [ls]   [7ak]    [ka]  [ar(k]    [ak] 
+  [IG$]  [ar(k] [OHW07]    [30]       $       %   [6uf]    [uf] 
+ [f8u0]    [uf]   [uf3]    [uf]  [8u0f]    [fu]  [xu6f]       x 
+  [xuf]       x [x0f8u]       x   [xuf]       x  [xuf3]       x 
+  [xfu]       x [xfu80]       x   [xuf]       x  [x6fu]    [ig] 
+ [0u8f]    [DY]   [3fu]  [pj80]    [ls]   [6xf]  [j0b8]    [l3] 
+   [80] [dc29z]   [xls] [kz7qa]   [zcd] [8ls1x]  [ankz] [j08pbl] 
+  [lxs] [ak7nz]  [lbpj] [%H9VOk]  [nzka] [pj6bl]  [jfxu] [s68ltf] 
+ [spej] [c3igj]  [uxhf] [$gdzy]  [tfsl] [%krad]  [sepj] [O3HaW] 
+ [rkad] [6jpse] [yt4*^7qWQue0T8Y3E9%(5$rw6]       6    [80] [85sio3p04ckuwaqvj92] [d8kjs7cv56w3e2] [7d81kvsewc32j] 
+[76cesva23kiozjxlw581p] [c428jkuwe3vi57] [53j87iuv24cwke] [2175d8kwsecpo6jv3ia]       3    [80] [ytruwie]    [we] 
+   [we] [ewrtyui]    [we]    [ew] [iutwery]       6    [08] [84c53qaiko92jw0pvus] 
+[85se72v6w3dckj] [ewj172vks38cd] [l5epic7zkvwx2js3816ao] [e2vij8uck3574w] [45v7k8jecui3w2] [vd2s6pc87ewko1ai5j3]       3    [08] 
+[iutwery]    [ew]    [ew] [itryweu]    [ew]    [ew] [ertiwyu]       6 
+[8t0ue] [38ouiks90a4v52cwpqj] [8ed5scjk3v26w7] [ws7d3v1jekc82] [s75ekc16jzpwlax23vo8i] [87u2cji53wk4ve] [2v74uwce5ki83j] [8p27aekvso316wjdc5i] 
+      3 [t0e8u] [iutrwye]    [ew]    [ew] [iuwtrey]    [we]    [ew] 
+[yrutiwe]       6 [e08tu] [uw85p4v2ok3js90icqa] [7s5jcvk3e62dw8] [8s71ej23ckdvw] [162xevwlp3kc7jz5soai8] [w7cv54eui283jk] 
+[47k3jivew2c58u] [d2e57kj6si1op3wa8cv]       3 [80etu] [iyruwte]    [ew]    [ew] [tweiyur] 
+   [we]    [ew] [yuriwet]    [6e] [s8te0fpu] [c2985o3pvuiwaj0kqs4] [7ejd3wc685v2sk] [sc7dkj1vw82e3] 
+[p5o1726kev3zijw8sxalc] [we482u537cjikv] [kj5w7v8eci234u] [67p5o8ckiwdsv1ae23j]    [03] [0p8sufte] [uwyitre]    [ew] 
+   [ew] [iuetyrw]    [we]    [ew] [rwyuiet]    [6e] [euf0p8st] [4aj9kv2s358qc0uiwpo] 
+[8cdje352wk6v7s] [wej738k2vc1sd] [wv7licj218eszp5xoa3k6] [7uewk4i82c35vj] [uk8c27j3wei5v4] [75pw136adikove2sjc8]    [03] [8eups0ft] 
+[euywtri]    [ew]    [we] [rtywuie]    [we]    [ew] [treuyiw]    [e6] 
+[u0teps] [ljf8x] [soiaq0wpu52kv3j894c]   [sew] [7j63825kcvd]   [wse] [d3c87v21kj] [swapeoi] 
+[83k7xl1jzc5v26]  [iwue] [2kj7c438v5]  [uewi] [k872v354cj] [iowpaes] [jc875v62kd31]    [03] 
+[tsu0epj8flx] [tiruwye]    [ew]    [ew] [irteywu]    [we]    [ew] [uwertiy] 
+   [e6] [pu0je8xflsbt] [v4ji50c9usaqk8wo32p] [87d23sc6kj5wve] [wedv2j1ksc783] [o31pkl27ejwisvcxz68a5] [7v2cj5wkeu48i3] [jk48vec5w7u32i] 
+[78ws2cevdjia3p1o56k]    [30] [0xlfp8jbsetu] [witeyru]    [ew]    [ew] [etyruiw]    [we] 
+   [we] [etuwyri] [pfbjxlsu124563!$@%]  [tsfu] [jfxspbl]    [pe]  [u8f0] [fjxsbpl] 
+  [0uf] [pslxjbf] [8t647!3^2u@1f]  [6euf] [sfbjlxp]    [30]  [0u8f] [sxfjplb] 
+ [81fu] [fxplbjs] [631%xuf@$!524]       x [81xfu]       x [xbljfsp]    [03] 
+[0uxf8]       x [ljbfspx] [6efxu]       x [lfjbspx] [8tuf3@241!7^6x]       x 
+ [0uxf]       x [psjbxlf]    [pe] [fu80x]       x [psbljfx] [stxfu] 
+      x [bxspjlf] [uf%6!@3x$4251]       x [stxuf]       x [lbpxsfj]    [ep] 
+[08fxu]       x [jpslfbx]  [0uxf]       x [lxbpjfs] [8t26713!^@xf4u]       x 
+[6eigx]       x [xpbjlfs]    [30]  [8fu0] [lbsfpjx]  [18DY] [fxjplsb] 
+[6f%$1u2453@!]    [18] [bpxsflj]    [03]  [p08j] [bpljsxf]    [e6] [lxbjpfs] 
+[8ts36!l4@127^]    [u0] [jfpblsx]    [ep]    [08] [spjfxlb]    [ts] [fxHaOVk] 
+[uf3z%d!421$5@]  [radz] [OaHfVxk]    [OW]  [dz90] [VOkaHfx]  [0udz] [OkafxVH] 
+[7r3d!z@^6142]  [W%sl] [OaVkHxf]    [03]  [0ka9] [fVOakxH]   [7dz] [xjlpVsf] 
+[62s$@l15!%43]  [81sl] [psfxjlV]    [03]  [8s0l] [Vpslfjx]  [e6ls] [xpjsfVl] 
+[t8sl1!@37^642]  [u0ak] [lfVjsxp]    [ep]  [pj08] [xplsjfV]   [tsl] [pjGbZCD] 
+[YD!34%7@251a$k]   [ark] [bCGpDjZ]    [IQ]  [7ak(]  [(Yka] [jDpGbZC] [7r3@!62^1IG4] 
+   [$Q] [GDjpCbZ]    [@(]  [(ka7]   [7Q$] [aVOxnHfk] [W%05!4132$O@H]   [30u] 
+      $       % [sbpflxju] [$3612u4f5@%!]  [tsuf] [lfsxjpb]    [ep]  [fu80] 
+[bslxfjp]   [0uf] [lpxjbsf] [8t634f21@u!^7]  [6euf] [jfsxpbl]    [30]  [f08u] 
+[bjflsxp]  [81fu] [plfbjxs] [6452ux3$%!f1@]       x [18xuf]       x [xfsbpjl] 
+   [03] [f8u0x]       x [xsfjbpl] [6exfu]       x [pbxjfsl] [t8xf3^21@674!u] 
+      x  [u0xf]       x [lsfxjbp]    [pe] [xf8u0]       x [lxpfsbj] 
+[stuxf]       x [bpjxfsl] [fu16!4@235%x$]       x [stxgi]       x [fjslbpx] 
+   [ep]  [0fu8] [bpfljsx]  [u0YD] [bxfjslp] [8t@3!46^1u72f]    [6e] [sfbljxp] 
+   [30]  [8jp0] [jxlspbf]  [18sl] [flbpsjx] [62xf1%@54$3!]    [18] [splbjfx] 
+   [03]  [0bj8] [jpslbxf]    [6e] [pbxljfs] [t8l37^1!6@42]    [u0] [pjsxfbl] 
+   [ep]    [80] [bplxsfj]    [ts] [zbdgpcj] [gi42@39$z!51%]   [ydl] [gdzcpbj] 
+   [ep]  [q9kn] [jcgpdbz]   [iqz] [bxljfps] [0u683742@!1l^]  [t8kn] [lpxsjfb] 
+   [e6]  [jb08] [fpjslbx]   [30l] [HxfaOVk] [74%352n!$k1@]  [03bj] [OkaHVfx] 
+   [%W]  [H97V] [xkfOVHa]  [7rkn] [pbfxjls] [t863b!@j1274^]  [0uxf] [bxlpjsf] 
+   [pe]  [68sl] [bxsfplj]  [stjp] [xOHfVak] [YDgc342$51%!@]  [raxf] [93$OW] 
+  [dz$]  [0usl] [OaHfkxV]    [r7] [@a427k613^!%]  [%Wjp]   [93%]   [O3H] 
+  [7ak] [fbpxlsj]    [68] [jp1!3256@4$%]       6       7    [!*]       c 
+[2gidz9]       z       j       g       d       p       i   [q9e] 
+      y       e       q  [gLSu]       9       6       z  [gizd] 
+      j       g       d       p       i       y [xf9ohqe]       e 
+      q       9       6       4       j  [gpjc]       g       d 
+      p       i       y       e [e9qfxoh]       q       9       6 
+      4       2       g [g9z2di]       d       p       i       y 
+      e       q [c9gjpeq]       9       6       4       2    [81] 
+      6       7 [xf6ls]       b       x       l       j       f 
+      s   [08e]       p       u       t  [kdza]       e       0 
+      b  [jslp]       x       l       j       f       s       p 
+[d8ea0zk]       u       t       e       0       8       x  [sfxl] 
+      l       j       f       s       p       u   [0e8]       t 
+      e       0       8       6       l       6       j       f 
+      s       p       u       t [l0jep8s]       e       0       8 
+      7       6    [18]       3    [92] [ak3H0O]       n       V 
+      x       k       H       f   [Wr0]       a       O       u 
+ [PJho]       r       W       n  [HkOa]       V       x       k 
+      H       f       a [Wp0lrsj]       O       u       r       W 
+      0       V  [dakz]       x       k       H       f       a 
+      O [0lrWjps]       u       r       W       0       7       x 
+[03aOkH]       k       H       f       a       O       u [dkz0Wra] 
+      r       W       0    [92]       7    [81]       %       7 
+[js6pl]       b       x       l       j       f       s [jsp6t] 
+      p       u       t       e       0       b [lu1sf8]       x 
+      l       j       f       s       p [03pxjf]       u       t 
+      e       0       8 [6lfYx2w!SkD(V19biyedL*85T7og^43jB$E%PO@JQ0nrquIWptcGsCavHhzZ] [zfJ4aZ^OCV5iH!0ob2nPv1uB6x8@DsphTy3$7Y%kGgjLl*td(9rqESQwceIW] [I3BsJ2d10GH!%zj8lcQgZ^pDuk$7rnOb4i6ywh(C*v@xVYatTLeoEfqPW5S9] [jL64TknSBzbhEJ(Z%t$Ws@H*5VQ^f8C2px9wcOvola!71rYdeuqP30yGgIDi] [dgycizb@1^72!9634] 
+ [bejp] [idzgcy]       c  [bejp] [gdyicz]       z   [eq9]  [jpeb] 
+[czydgi] [jSugL]  [pbej] [zgicyd] [g%51426d!3z$@i]  [jpeb] [dgczyi]       d 
+ [ejpb] [idcygz]       p [9eqofhx]  [jepb] [yidgcz]       i  [pejb] 
+[igcdyz] [y@267p4!^cgj319]  [pjbe] [yidgzc]       i  [bepj] [digyzc]       p 
+[he9foxq]  [jpeb] [cizdgy]       d  [jebp] [dcyigz] [g6i3@%2!5z$14d]  [epjb] 
+[dyiczg]       j  [bepj] [gdzyic]       z [9qgjpce]  [jpeb] [zydgci] 
+      c  [bepj] [stuxlf] [b18!@27t3u6^sx4fl]  [epjb] [xustfl]       x  [pbej] 
+[flsxtu]       l   [e80]  [pbje] [tlsfux] [jyzrdak]  [jpbe] [sltfux] 
+[fpl5!ts$j6e4@%123]  [bpje] [usltxf]       s  [bejp] [xustfl] [pea0drkyz8]  [epbj] 
+[fxsutl]       u  [ebpj] [fsxutl] [t81@3x4sf7^lu62!]  [epbj] [flsuxt]       u 
+ [pjeb] [tufslx]       p   [e80]  [epbj] [uxtsfl]       s  [bjpe] 
+[tsufxl] [fbx%pu5@32$!j146]  [ejbp] [tuslxf]       j  [bejp] [xfutsl]  [le80] 
+ [jbep] [sxlftu]       x  [jbpe] [igdzcy] [b1q6!@^3724]  [pjeb] [igcdyz] 
+      c  [epjb] [dicgyz]       z [zcgey9diq]  [bepj] [yizcdg]       j 
+ [pebj] [gdzyci] [g%@91!3$245]  [pjeb] [czdyig]       d  [bjpe] [yigzcd] 
+[p9cbgqeji]  [ejbp] [iydczg]       i  [bpje] [dayzkr] [yf3O@4!1V^602uH7x]  [OHWV] 
+[radkzy]       i  [OVHW] [krdzay]       p [07ulWfxts]  [WOHV] [dazykr] 
+      d  [VWHO] [kyrdaz] [g1%$2!3@id4c5zy]  [OHVW] [zkadry]       j  [HOVW] 
+[zdyakr]       z [Wr07dkyaz]  [HWVO] [ykarzd]       c  [WVHO] [tesfbxjlpu] 
+[blxs%3p@15!7$4^2je6t] [I2wkh@6cY!oli70G%9$s5uH3^ZvVbCqeyg1QB84WtLnfpST*DPzaEJxrdjO(] [G2@35k^j4x6%Cl$I1OPWz!Hau7hdYsZJLobwg0SVqvcBTfpDyEQirn(*et89] [p324o80svciuqwja59k] [8c72k3wsevd6j5] [vw217kdj8ce3s] [ko6c1pva5w2x37ij8lezs] [w85ci374ekvj2u] 
+[kjvu75e48iw23c] [ow87iev6c1saj5pkd32] [rueyiwt]    [ui]    [iu] [rweytui]    [iu]    [iu] 
+[rwutiey] [3!$fe21u56t%ps@4]       4       $       5       %       6       ^ 
+      7 [1fpuest]       !       2       @       3       4       $ 
+      5       % [uestf80p]       6       ^       7       8       * 
+      9       ( [0feptsu]       q       Q       w       W       e 
+      E       r [tu^324!sep176f@]       T       y       Y       u       i 
+      I       o [Otspeuf]       p       P       a       s       S 
+      d       D       f [08eustfp]       g       G       h       H 
+      j       J       k [lupstfe]       L       z       Z       x 
+      c       C       v [b%su1$62!5t@43efp]       V       v       C       c 
+      x       Z       z [Lpestfu]       l       k       J       j 
+      H       h       G       g [0tsfupe8]       f       D       d 
+      S       s       a       P [puetfs]       O       o       I 
+      i       u       Y       y [T732s6f!u^p@e4xt1]       t       r       E 
+      e       x       W       w       Q [qetufxps]       0       ( 
+      9       *       x       8       7       ^       6 [sfp80tuxe] 
+      %       5       $       4       x       3       @       2 
+[!tupfxes]       1       7       ^       6       x       %       5 
+      $ [3$tu1p2@s6xe!f54%]       4       $       5       %       x       6 
+      ^       7 [1xftespu]       !       2       @       3       x 
+      4       $       5       % [u0pfxset8]       6       ^       7 
+      8       x       *       9       ( [0tsxpfue]       q       Q 
+      w       W       x       e       E       r [txp3f1!eu@27s64^]       T 
+      y       Y       u       x       i       I       o [Odgiexyp] 
+      p       P       a       s       x       S       d       D 
+      f [0upfte8s]       g       G       h       H       j       J 
+      k [laeprDY]       L       z       Z       x       c       C 
+      v [b2s@3f$t6p5e%4u1!]       V       v       C       c       x       Z 
+      z       L       l       k       J       j       H       h 
+      G       g [fujptse08]       f       D       d       S       s 
+      a       P       p       O       o       I       i       u 
+      Y       y [T6plsu3f^7j2@4!1]       t       r       E       e       W 
+      w       Q       q       0       (       9       *       8 
+      7       ^       6 [8uept0]       %       5       $       4 
+      3       @       2       !       1       7       ^       6 
+      %       5       $ [3ji5%1$!4p@2gzd]       4       $       5       % 
+      6       ^       7 [1jgpzid]       !       2       @       3 
+      4       $       5       % [pzdajugrO0Wi]       6       ^       7 
+      8       *       9       ( [0jdpgiz]       q       Q       w 
+      W       e       E       r [td@34ij2p!67z^1g]       T       y       Y 
+      u       i       I       o [Osjlfpu]       p       P       a 
+      s       S       d       D       f [a0uHdrOyWk]       g       G 
+      h       H       j       J       k [ldijzgp]       L       z 
+      Z       x       c       C       v [b!s2f1$pu%5l436j@]       V       v 
+      C       c       x       Z       z [Lplsufj]       l       k 
+      J       j       H       h       G       g [teuf0lpsj8]       f 
+      D       d       S       s       a       P [plsjuf]       O 
+      o       I       i       u       Y       y [T@l4up3jsf6^!721]       t 
+      r       E       e       W       w       Q [qyaOdHk]       0 
+      (       9       *       8       7       ^       6 [uepft0sj8] 
+      %       5       $       4       3       @       2 [!pfuljs] 
+      1       7       ^       6       %       5       $ [3G1DYI7!5$2k@a%4] 
+      4       $       5       %       6       ^       7 [1DkIYaG] 
+      !       2       @       3       4       $       5       % 
+[Y7Gp(kraeID]       6       ^       7       8       *       9       ( 
+[0kaYIDG]       q       Q       w       W       e       E       r 
+[t74ar!I13^Y6G@D2]       T       y       Y       u       i       I       o 
+      O       p       P       a       s       S       d       D 
+      f [G(e7apYIkrD]       g       G       h       H       j       J 
+      k       l       L       z       Z       x       c       C 
+      v [b!rW1Y3H$OD0@%a452]       V       v       C       c       x       Z 
+      z       L       l       k       J       j       H       h 
+      G       g       f       D       d       S       s       a 
+      P       p       O       o       I       i       u       Y 
+      y [T@!1263^47]       t       r       E       e       W       w 
+      Q       q       0       (       9       *       8       7 
+      ^       6       %       5       $       4       3       @ 
+      2       !       1       7       ^       6       %       5 
+      $    [b3] [63u4$%!s@2epft15]    [V4]    [$v]    [5C]    [%c]    [x6] 
+   [Z^]    [7z] [1Lesuptf]    [!l]    [k2]    [J@]    [j3]    [4H] 
+   [$h]    [G5]    [%g] [t0pe8ufs]    [6f]    [D^]    [7d]    [8S] 
+   [*s]    [9a]    [(P] [0pteufs]    [Oq]    [oQ]    [wI]    [iW] 
+   [eu]    [EY]    [yr] [Tt@eu64p^2317!fs]    [Tt]    [yr]    [EY]    [eu] 
+   [Wi]    [Iw]    [oQ] [qOfeupts]    [p0]    [(P]    [a9]    [*s] 
+   [8S]    [d7]    [D^]    [6f] [puet0s8f]    [g%]    [5G]    [$h] 
+   [H4]    [3j]    [J@]    [k2] [l!etsufp]    [L1]    [z7]    [Z^] 
+   [x6]    [c%]    [C5]    [$v] [3b!sf%p@t5e416x$2u]    [4V]    [v$]    [5C] 
+   [c%]       x    [6x]    [Z^]    [z7] [1Lstufepx]    [l!]    [2k] 
+   [J@]    [3j]       x    [4H]    [$h]    [G5]    [g%] [puxe8s0tf] 
+   [6f]    [D^]    [d7]    [S8]       x    [s*]    [9a]    [P(] 
+[0pxutsfe]    [Oq]    [oQ]    [Iw]    [Wi]       x    [ue]    [EY] 
+   [ry] [tTu47xs26ef31@!p^]    [tT]    [yr]    [YE]    [ue]       x    [iW] 
+   [Iw]    [oQ] [Oqfspuxet]    [p0]    [P(]    [a9]    [s*]       x 
+   [S8]    [d7]    [D^]    [f6] [eup08xtsf]    [%g]    [G5]    [$h] 
+   [H4]       x    [3j]    [@J]    [2k] [l!sefuptx]    [1L]    [7z] 
+   [Z^]    [6x]       x    [c%]    [5C]    [$v] [b3%x2u@!1s5e4p6$ft]    [V4] 
+   [v$]    [C5]    [c%]       x    [6x]    [Z^]    [7z] [L1dyepgxi] 
+   [l!]    [2k]    [J@]    [3j]       x    [4H]    [$h]    [5G] 
+   [%g] [tupes08f]    [6f]    [D^]    [7d]    [S8]    [s*]    [9a] 
+   [P(] [p0reaDY]    [qO]    [Qo]    [Iw]    [iW]    [ue]    [YE] 
+   [yr] [tTe6su42@1p73!f^]    [tT]    [yr]    [YE]    [ue]    [iW]    [wI] 
+   [Qo]    [qO]    [p0]    [P(]    [a9]    [*s]    [S8]    [d7] 
+   [^D]    [f6] [80yugpjiedt]    [%g]    [5G]    [$h]    [H4]    [3j] 
+   [J@]    [2k] [!lfjups]    [1L]    [7z]    [Z^]    [x6]    [c%] 
+   [5C]    [$v] [3b6j1pl!@%$24x5fs]    [4V]    [v$]    [C5]    [%c]    [6x] 
+   [^Z]    [7z]    [L1]    [!l]    [k2]    [J@]    [3j]    [H4] 
+   [$h]    [5G]    [%g] [pxstfble80ju]    [6f]    [D^]    [7d]    [8S] 
+   [s*]    [a9]    [P(]    [p0]    [Oq]    [oQ]    [Iw]    [iW] 
+   [ue]    [YE]    [ry] [tT3^7b4!62lx@f1j]    [Tt]    [yr]    [YE]    [ue] 
+   [iW]    [Iw]    [oQ]    [Oq]    [p0]    [P(]    [a9]    [s*] 
+   [8S]    [d7]    [D^]    [6f] [e0u8tp]    [%g]    [5G]    [h$] 
+   [H4]    [j3]    [@J]    [2k]    [l!]    [1L]    [z7]    [^Z] 
+   [x6]    [c%]    [5C]    [$v] [3bcn42$9g1k!%z@5]    [4V]    [$v]    [C5] 
+   [c%]    [6x]    [Z^]    [7z]    [L1]    [l!]    [k2]    [J@] 
+   [j3]    [H4]    [h$]    [5G] [g%xjlfb]    [6f]    [D^]    [7d] 
+   [8S]    [*s]  [9za6]    [P(]  [0%pZ]    [Oq]  [x5oQ]    [wI] 
+ [$icW]    [ue]  [CY4E]    [yr]  [@tTV] [2*q@9!kL15ynxVH7pJei4$3zfd]  [Tvt3]  [r4yC] 
+ [c$YE]  [x5ue]  [ZiW%]  [6Iwz]  [Q^oL]  [lO7q]  [p01k]  [J(P!] 
+ [29aj]  [@*sH]  [S83h]  [7Gd4]  [$gD^] [f56ckgHZnzDV]   [Dg%]  [G65d] 
+ [$^hS]  [Hs47]  [ja38]  [*@PJ]  [2k9p]  [(lO!]  [L0o1]  [q7Iz] 
+ [^ZQi]  [u6wx]  [WcY%]  [C5ey]  [v$ET]  [tr3b] [!@^106bT7*3vW42xu8]  [4trV] 
+ [vE$T]  [y5Ce]  [cW%Y]  [w6ux]  [i^QZ]  [q7zI]  [L10o]  [O(!l] 
+ [29pk]  [JP*@]  [aj83]  [4sH7]  [$S^h]  [5G6d] [g%DkzdfVnLHJx]   [f56] 
+ [g$^D]  [7d4G]  [S83h]  [s@*H]  [2j9a]  [P!J(]  [0pk1]  [7Oql] 
+ [^oLQ]  [6wzI]  [W%Zi]  [xeu5]  [Yc$E]  [rC4y]  [@tVT] [7tu8b0^eZsVDH@f2kj%6p1!l3x] 
+ [Ttv3]  [r4Cy]  [EY$c]  [x5eu]  [%WZi]  [zI6w]  [Lo^Q]  [qO7l] 
+ [1p0k]  [!J(P]  [2a9j]  [@*Hs]  [Sh83]  [7d4G]  [g^D$] [6f5ljvSxbLJh] 
+  [%gD]  [5Gd6]  [S$^h]  [47Hs]  [8a3j]  [P*@J]  [29kp]  [(lO!] 
+ [10Lo]  [Izq7]  [QZ^i]  [w6xu]  [WYc%]  [y5eC]  [$ETv]    [tr] 
+[(Vzrkd$a7W!3H@5n4Z%1YOD2]  [rtb3]  [V4ET]  [vye$]  [Y5WC]  [%ucw]  [6Qxi]  [ZIq^] 
+ [o70z]  [(1OL]  [p!l9]  [P2*k]  [J8@a]  [73js]  [H^4S]  [6d$h] 
+[D%5GbkHlVfZsxj]  [f5g%]  [fg$6]  [G^4D]  [3d7h]  [@8SH]  [*js2]  [!a9J] 
+ [(P1k]  [l07p]  [^LqO]  [6zoQ]  [%IwZ]  [5ixW]  [ce$u]  [4YCE] 
+   [yr] [%WO@^vLz!khV$yd53S19H4r72Ja]  [@tVT]  [vT3t]  [y4Cr]  [Y$Ec]  [xu5e]  [%iZW] 
+ [z6Iw]  [LoQ^]  [qOl7]  [1k0p]  [JP(!]  [ja29]  [@sH*]  [h3S8] 
+ [Gd47] [$^DgVkHzZnad]   [f65]   [%Dg]  [Gd56]  [S^h$]  [sH74]  [a3j8] 
+ [@P*J]  [k29p]  [!(Ol]  [L0o1]  [Iqz7]  [^iZQ]  [u6wx]  [Wc%Y] 
+ [Ce5y] [$vEbT3] [vb^7J12@hP36LsEw!T5Sl*4ofxj]  [t4Vr]  [tv$r]  [T5CE]  [ec%y]  [Wx6Y] 
+ [w^Zu]  [i7zQ]  [q1LI]  [!0ol]  [(kO2]  [@9pJ]  [*P3j]  [H84a] 
+ [$h7s]  [GS^5] [6d%gvlxSojhfJsL]  [fD6%]  [^D5f]  [$7gd]  [SG48]  [sh*3] 
+ [a@H9]  [2jP(]  [0!Jp]  [kO1q]  [oQ7l]  [wIL^]  [zWi6]  [eZ%u] 
+ [5YxE]  [cyr$] [tC4VT@] [%f3Dtp8@sV!a^u10Hj7l6eZ2kY]  [t3Tv]  [ryC4]  [cE$Y]  [5uex] 
+ [W%iZ]  [6zwI]  [^LQo]  [Olq7]  [pk01]  [P(J!]  [j29a]  [sH@*] 
+ [38Sh]  [4d7G]  [$gD^] [f65juItpHskaZD]   [gD%]  [G56d]  [^h$S]  [s7H4] 
+ [ja83]  [P@*J]  [92kp]  [!O(l]  [L10o]  [Iqz7]  [^QZi]  [6uxw] 
+ [%YcW]  [ey5C]  [vE$T]   [rtb] [5k(!%^26ad73pYzr@y1H9OcgD$Wj4]   [rVt]   [EvT]   [eCy] 
+  [YcW]   [xuw]   [ZQi]   [qzI]   [oL0]   [(Ol]   [k9p]   [P*J] 
+  [8aj]   [s7H]   [^Sh]   [Gd6] [%DgHjrlpfYOxsa]    [5f]   [$Dg]   [4Gd] 
+  [hS3]   [s@H]   [j2a]   [!JP]   [pk1]   [7Ol]   [Lo^]   [z6I] 
+  [Z%i]   [xu5]   [c$Y]   [Cy4]    [TV] [$3@iS7of^T1gLj!H5zx4dw%OE*62p]    [vt]    [Cr] 
+   [Ec]    [xe]    [WZ]    [wz]    [LQ]    [ql]    [k0]    [(J] 
+   [j9]    [*H]    [8h]    [7G]    [g^] [6fpjDZskOaHlu]    [D%]    [5d] 
+   [S$]    [s4]    [3a]    [@P]    [2p]    [O!]    [1o]    [I7] 
+   [i^]    [6u]    [Y%]    [y5]    [T$]    [bt] [fOaHkuSL]    [rV] 
+   [vE]    [Ce]    [Wc]       x       Z       z       L       l 
+      k       J       j       H       h       G [gfjtpus]       f 
+      D       d       S       s       a       P       p       O 
+      o       I       i       u       Y       y [p!POqiHeZkWT0Y(2dC*gos%n^w791JGf@a3xl8QLbyE5zh46vIBD$rjtcuSV]       t 
+      r       E       e       W       w       Q       q       0 
+      (       9       *       8       7       ^ [6OukafH]       % 
+      5       $       4       3       @       2       !       1 
+      7       ^       6       %       5       $ [^Gk4BYcEspxrSa0@*bH2hvw6W83i!5y1%jTIePD7t$nuzoOCVf(L9gQqJZdl] [f6pej8ust] 
+      V       v       C       c       x       Z       z       L 
+      l       k       J       j       H       h       G       g 
+      f       D       d       S       s       a       P       p 
+      O       o       I       i       u       Y       y       T 
+      t       r       E       e       W       w       Q       q 
+      0       (       9       *       8       7       ^       6 
+      %       5       $       4       3       @       2       ! 
+      1       7       ^       6       %       5       $ [dkza$Cj46^%coG9!Z7yhprxn2BHV350@1E*JbfuOWgeQsw8YDSPqi(LITvtl] 
+      ^       7       1       !       2       @       3       4 
+      $       5       %       6       ^       7       8       * 
+      9       (       0       q       Q       w       W       e 
+      E       r       t       T       y       Y       u       i 
+      I       o       O       p       P       a       s       S 
+      d       D       f       g       G       h       H       j 
+      J       k       l       L       z       Z       x       c 
+      C       v       V       b       B       n [PEBg!STi4^Lq*Jc] [3b%@21SE54iTg$P!^] 
+   [4V]    [$v]    [5C]    [%c]    [x6]    [^Z]    [7z] [SqiT!LcP^BE*4gJ] 
+   [L1]    [l!]    [2k]    [@J]    [3j]    [H4]    [h$]    [5G] 
+[4qgL^*B!iSPTEJc] [g%iPTSE]    [6f]    [D^]    [7d]    [8S]    [s*]    [a9] 
+   [P(] [4^LBqScEPTgJ*!i]    [p0]    [qO]    [Qo]    [Iw]    [Wi]    [eu] 
+   [YE]    [ry] [g*!^TB4EiPcLSqJ]    [Tt] [SiEqTP*g]    [Tt]    [yr]    [YE] 
+   [ue]    [Wi]    [wI]    [oQ] [BLE4^qTgJi!c*PS]    [qO]    [0p]    [P(] 
+   [a9]    [s*]    [8S]    [d7]    [D^] [LSPg4^cT*!JBEqi] [f6igPTES]    [g%] 
+   [G5]    [$h]    [4H]    [3j]    [J@]    [k2] [gL4c*P^BJSE!iqT]    [l!] 
+   [1L]    [7z]    [^Z]    [6x]    [c%]    [5C]    [v$] [iEL^P!4c*TgJSBq] 
+[b34@26!TgP1^EiS7]    [4V]    [v$]    [5C]    [%c]    [x6]    [^Z]    [z7] 
+[qi*JBS!^LcT4EPg]    [1L]    [!l]    [2k]    [@J]    [3j]    [H4]    [h$] 
+   [5G] [^E4J!iBL*TqgSPc] [g%PTiES]    [6f]    [^D]    [d7]    [8S]    [*s] 
+   [a9]    [P(] [SETgP^L4*!JiqBc]    [p0]    [Oq]    [oQ]    [Iw]    [Wi] 
+   [eu]    [YE]    [yr] [J*q^P!SL4gBiTEc]    [tT] [EPTgiSq*]    [Tt]    [yr] 
+   [EY]    [ue]    [iW]    [wI]    [oQ] [Eq!cB^g*JPi4STL]    [Oq]    [0p] 
+   [(P]    [9a]    [s*]    [8S]    [7d]    [^D] [L4gqBiTJ!^PcS*E] [6fSPiEgT] 
+   [%g]    [G5]    [$h]    [4H]    [j3]    [J@]    [2k] [*!q4SBJE^ciPTLg] 
+   [l!]    [L1]    [7z]    [^Z]    [x6]    [%c]    [C5]    [v$] 
+[STiB^!4PLEJ*cgq] [5^g%i2P!T1$3S4@E]    [b3]    [V4]    [v$]    [5C]    [%c]    [6x] 
+   [^Z] [q^S*gT!BcJLP4Ei7z]    [L1]    [l!]    [2k]    [J@]    [3j]    [H4] 
+   [$h] [^iJSPB*4cLq!gET] [5GPETSgi]    [g%]    [f6]    [D^]    [7d]    [8S] 
+   [*s]    [a9] [*iLET!JcP4q^BSg]    [(P]    [p0]    [Oq]    [oQ]    [Iw] 
+   [iW]    [eu]    [EY] [g!T*J4c^ELBPiSq]    [ry] [TEPgqiS*]    [tT]    [Tt] 
+   [ry]    [EY]    [eu]    [iW]    [wI] [^LPq*TiJ!c4BESg]    [oQ]    [Oq] 
+   [p0]    [P(]    [9a]    [s*]    [8S]    [d7] [g^4!cETJPSBiLq*] [D^iPSgET] 
+   [6f]    [%g]    [5G]    [h$]    [H4]    [j3]    [J@] [iPBqS^cLTE!*gJ4] 
+   [2k]    [l!]    [1L]    [7z]    [^Z]    [x6]    [c%]    [C5] 
+[P^TL!c4EiSq*JgB] [b$3vSTP4@6g!^2E7i1c]    [V4]    [v$]    [5C]    [c%]    [6x]    [Z^] 
+   [7z] [S*^EP4!LcqgBiTJ]    [1L]       c    [!l]    [2k]    [@J]    [3j] 
+   [H4]    [h$]    [G5] [!BJ^LgiEPST4*qc] [g%STiEcP]    [6f]    [^D]    [d7] 
+   [S8]    [*s]    [a9]    [P(] [*^EcLTPqS!B4giJ]    [0p]       c    [Oq] 
+   [Qo]    [Iw]    [Wi]    [eu]    [EY]    [yr] [LJS^*!BP4EqicgT]    [tT] 
+[*EiqTScPg]    [Tt]    [yr]    [YE]    [eu]    [iW]    [wI]    [oQ] 
+[c*!^qJSL4TPBEgi]    [qO]       c    [0p]    [P(]    [a9]    [*s]    [8S] 
+   [7d]    [^D] [c^E!T4qgJiBLPS*] [6fiScgETP]    [g%]    [G5]    [$h]    [H4] 
+   [3j]    [J@]    [k2] [g!qB^JT*cP4LiSE]    [!l]       c    [L1]    [7z] 
+   [Z^]    [6x]    [c%]    [5C]    [v$] [P^ETq4L*ScJi!Bg] [b3!@4i^5gT2E$1S%cP]    [4V] 
+   [v$]    [5C]    [%c]    [6x]    [^Z]    [7z] [g*TLSBc!^i4qPEJ]    [1L] 
+      c    [!l]    [2k]    [@J]    [3j]    [4H]    [h$]    [G5] 
+[B4T*J^!PciqgSEL] [g%SEciPT]    [f6]    [^D]    [d7]    [S8]    [s*]    [9a] 
+   [(P] [qcgT4SPEB!^LJi*]    [0p]       c    [qO]    [oQ]    [Iw]    [Wi] 
+   [ue]    [EY]    [yr] [4SJgBc*i!^TELPq]    [Tt] [ci*TgPqSE]    [Tt]    [ry] 
+   [EY]    [ue]    [Wi]    [wI]    [Qo] [!TB^J4ScqiP*LEg]    [qO]       c 
+   [p0]    [(P]    [a9]    [s*]    [8S]    [7d]    [D^] [BTSL^Ecqig4PJ!*] 
+[6fPSgcTiE]    [%g]    [5G]    [$h]    [4H]    [j3]    [J@]    [k2] 
+[B!^4iTqJLEcg*SP]    [l!]       c    [1L]    [z7]    [^Z]    [x6]    [c%] 
+   [C5]    [v$] [gB!q4i^cPJETLS*] [b3^2iP4S7g6!cE1T@]    [4V]    [$v]    [C5]    [%c] 
+   [x6]    [^Z]    [z7] [Lc4^*iq!gESBJPT]    [L1]       c    [l!]    [2k] 
+   [@J]    [j3]    [4H]    [h$]    [5G] [qEL!^TSiJg4*PBc] [g%GcYDEPI]    [6f] 
+   [^D]    [d7]    [8S]    [*s]    [a9]    [P(] [^4EScJiBLP!qg*T]    [0p] 
+      c    [qO]    [oQ]    [wI]    [Wi]    [ue]    [YE]    [ry] 
+[4EqJ^c!*SPiLgTB]    [Tt] [E*TPqgSi]    [tT]    [ry]    [YE]    [eu]    [Wi] 
+   [wI]    [Qo] [!^EiLP4B*cJqTgS]    [Oq]    [0p]    [P(]    [9a]    [*s] 
+   [S8]    [7d]    [^D] [TESPgc!*qBJ4L^i] [f6utsPE]    [%g]    [5G]    [h$] 
+   [H4]    [3j]    [@J]    [2k] [TPq!B^4ciES*JgL]    [l!]    [L1]    [7z] 
+   [Z^]    [6x]    [%c]    [5C]    [v$] [q4JBcL^i*g!PTES] [4^31i@!5P2$ETSg%]    [3b] 
+   [V4]    [$v]    [5C]    [c%]    [6x]    [^Z] [*gJ4i!TL^qEcSPBz7]    [L1] 
+   [l!]    [k2]    [J@]    [j3]    [H4]    [$h] [4g^EJ!qBcLSPTi*]    [5G] 
+   [g%]    [6f]    [^D]    [d7]    [S8]    [s*]    [a9] [Pg^cL!4ESJqi*TB] 
+   [P(]    [p0]    [qO]    [oQ]    [Iw]    [iW]    [ue]    [EY] 
+[JgS4TLicB^!PE*q]    [ry] [TSPEiJg*q]    [tT]    [tT]    [ry]    [YE]    [eu] 
+   [Wi]    [Iw] [gcSEiJ!4Tq^L*PB]    [Qo]    [Oq]    [p0]    [P(]    [a9] 
+   [*s]    [S8]    [7d] [4LBcT!qi^JPgE*S]    [D^]    [f6]    [%g]    [5G] 
+   [$h]    [4H]    [3j]    [J@] [TiE4L*JgPc!^qSB]    [k2]    [l!]    [1L] 
+   [z7]    [^Z]    [x6]    [c%]    [C5] [EP^ScJB4qTi*g!L] [3b$vS7^J2@4Pg!6i1L]    [V4] 
+   [v$]    [5C]    [c%]    [x6]    [Z^]    [z7] [J*S4i^T!qgPcBEL]    [1L] 
+   [!l]    [k2]    [J@]    [3j]    [4H]    [$h]    [G5] [4*Tqcg!^BSLEJiP] 
+   [g%]    [f6]    [D^]    [7d]    [8S]    [*s]    [9a]    [(P] 
+[i4PcJTgL^!B*qSE]    [p0]    [Oq]    [oQ]    [wI]    [iW]    [ue]    [YE] 
+   [ry] [^*L!c4gEiJqBSTP]    [Tt] [*EqiTP]    [tT]    [ry]    [EY]    [eu] 
+   [Wi]    [wI]    [oQ] [gq^JE4i!L*ScBTP]    [qO]    [p0]    [P(]    [9a] 
+   [s*]    [8S]    [7d]    [^D] [^!L4TBi*cgEPJqS]    [6f]    [%g]    [G5] 
+   [$h]    [H4]    [j3]    [J@]    [k2] [!JPEBSiLq*^4cTg]    [!l]    [1L] 
+   [z7]    [Z^]    [x6]    [%c]    [C5]    [v$] [EGC@Z$Q(YIB^PDJ] [b354PD!G$Z@I%6J2] 
+   [4V]    [v$]    [C5]    [c%]    [6x]    [^Z]    [z7] [^(CYPGJDBQI@$EZ] 
+   [1L]    [!l]    [k2]    [J@]    [3j]    [4H]    [h$]    [5G] 
+[I$@YEBJPGZ^C(QD] [g%DJIPGZ]    [f6]    [D^]    [d7]    [S8]    [*s]    [a9] 
+   [(P] [^QDBI(ZP$EY@JGC]    [p0]    [qO]    [Qo]    [Iw]    [iW]    [ue] 
+   [EY]    [yr] [ZBE@JQDC^P$(IGY]    [Tt] [JpiGPqsZeIDt]    [Tt]    [yr]    [EY] 
+   [eu]    [Wi]    [wI]    [Qo] [Y@B$IPDEZ(Q^CJG]    [Oq]    [0p]    [P(] 
+   [9a]    [s*]    [8S]    [d7]    [^D] [Y$CZI^(Q@JBGDEP] [6fIGZPJD]    [%g] 
+   [G5]    [$h]    [H4]    [3j]    [@J]    [2k] [CGE$QYJZPD^B(@I]    [l!] 
+   [L1]    [7z]    [Z^]    [6x]    [c%]    [C5]    [$v] [^@CIBY$DZPGJQ(E] 
+[b3641@PI7JGD^!Z2]    [V4]    [v$]    [C5]    [c%]    [6x]    [Z^]    [z7] 
+[(I^CGB@P$QDEJYZ]    [L1]    [l!]    [k2]    [@J]    [3j]    [4H]    [$h] 
+   [5G] [$J(^@GPEYDCBIZQ] [g%LiSPJ]    [6f]    [D^]    [7d]    [8S]    [s*] 
+   [a9]    [P(] [Z(QY$GP^D@BICJE]    [p0]    [Oq]    [Qo]    [Iw]    [iW] 
+   [ue]    [YE]    [ry] [PQ$JB(Z^Y@EDIGC]    [Tt] [liqstpYDje]    [Tt]    [ry] 
+   [EY]    [eu]    [Wi]    [Iw]    [Qo] [GYIEZ(D@QC^PB$J]    [Oq]    [p0] 
+   [(P]    [9a]    [s*]    [S8]    [d7]    [^D] [IE$@ZG^(QPBJYCD] [6fDIGZJP] 
+   [g%]    [5G]    [$h]    [H4]    [j3]    [J@]    [k2] [IPE@B^C$YDQJG(Z] 
+   [!l]    [1L]    [7z]    [Z^]    [x6]    [c%]    [5C]    [v$] 
+[qg^!SPi*BTc4LEJ] [%21$J@gLi!5^S43P]    [3b]    [V4]    [$v]    [5C]    [%c]    [6x] 
+   [^Z] [SP^!TqJ4Lg*icEBz7]    [L1]    [!l]    [2k]    [J@]    [j3]    [4H] 
+   [h$] [P*B4i!^cqLTJgSE] [G5SgJLPi]    [%g]    [6f]    [D^]    [d7]    [8S] 
+   [*s]    [9a] [^*BSqL4ic!TgPEJ]    [P(]    [0p]    [qO]    [Qo]    [wI] 
+   [Wi]    [eu]    [EY] [S4^!icgETLPq*JB]    [yr] [igPEJTS*qL]    [tT]    [Tt] 
+   [ry]    [EY]    [eu]    [iW]    [Iw] [^4Bq!J*cESTLigP]    [Qo]    [qO] 
+   [p0]    [(P]    [9a]    [s*]    [S8]    [d7] [4BTiL^cP*!JqEgS] [D^LPJSig] 
+   [6f]    [%g]    [G5]    [h$]    [H4]    [j3]    [@J] [B*L!E^4cgPiSTqJ] 
+   [2k]    [l!]    [1L]    [7z]    [Z^]    [6x]    [c%]    [5C] 
+[iPg4^qJ*L!EBTcS] [v3b$46!@gP^1i7LS2J]    [V4]    [v$]    [5C]    [c%]    [6x]    [Z^] 
+   [7z] [*q^LEBSc4JgT!iP]    [L1]    [!l]    [2k]    [J@]    [3j]    [H4] 
+   [$h]    [G5] [S^*qL4Eg!PJBTic] [g%DlYjps]    [f6]    [^D]    [7d]    [S8] 
+   [s*]    [9a]    [(P] [Eq^SB!i4cLPT*Jg]    [p0]    [qO]    [oQ]    [Iw] 
+   [Wi]    [ue]    [EY]    [yr] [E!*^SPiTqcgB4JL]    [tT] [giJETSP*q]    [Tt] 
+   [yr]    [YE]    [eu]    [Wi]    [Iw]    [Qo] [Eqc^!SgBJ*iT4LP]    [qO] 
+   [p0]    [P(]    [a9]    [s*]    [S8]    [7d]    [^D] [!^4LESBTgJqci*P] 
+[6fgPSLiJ]    [%g]    [5G]    [$h]    [4H]    [3j]    [@J]    [k2] 
+[cE*!L4^JPBSgqTi]    [!l]    [1L]    [z7]    [^Z]    [x6]    [%c]    [5C] 
+   [$v] [uo30t815hlfvxsw] [3b8!$2@loh1%5su4f]    [4V]    [v$]    [C5]    [%c]    [x6] 
+   [Z^]    [z7] [ofut851vls30hwx]    [1L]    [!l]    [2k]    [@J]    [j3] 
+   [H4]    [h$]    [5G] [3uhw051to8slvxf] [%glufsho]    [f6]    [D^]    [d7] 
+   [S8]    [s*]    [a9]    [(P] [o8wt3x1fvul05sh]    [0p]    [qO]    [Qo] 
+   [Iw]    [iW]    [ue]    [YE]    [ry] [05otwf13vxlus8h]    [Tt] [Eul80Pfhsto] 
+   [tT]    [yr]    [EY]    [eu]    [Wi]    [wI]    [Qo] [3v5fo1lxsh0utw8] 
+   [qO]    [p0]    [(P]    [a9]    [*s]    [8S]    [7d]    [^D] 
+[3f8v1us5hotlxw0] [6fholsu]    [%g]    [5G]    [$h]    [H4]    [j3]    [@J] 
+   [2k] [35ov18fthuxs0wl]    [l!]    [L1]    [7z]    [Z^]    [x6]    [%c] 
+   [5C]    [v$] [f153o0uvwl8sxth] [3bf78@^41!2utsho6]    [V4]    [$v]    [5C]    [%c] 
+   [6x]    [Z^]    [z7] [xu85s10ftl3wvoh]    [L1]    [!l]    [2k]    [J@] 
+   [j3]    [H4]    [h$]    [G5] [w3fhltvx015s8uo]    [g%]    [6f]    [D^] 
+   [7d]    [8S]    [*s]    [9a]    [(P] [358uh1lfvow0sxt]    [0p]    [qO] 
+   [oQ]    [wI]    [iW]    [ue]    [YE]    [ry] [1suh50ol8wtvxf3]    [tT] 
+[Puhs8tflE0o]    [Tt]    [yr]    [YE]    [ue]    [Wi]    [Iw]    [oQ] 
+[531hfs8wvlxto0u]    [qO]    [p0]    [(P]    [9a]    [*s]    [S8]    [d7] 
+   [^D] [ov1lu3t0f5h8xsw]    [f6]    [g%]    [G5]    [$h]    [4H]    [3j] 
+   [J@]    [2k] [wto01hs35uvf8xl]    [l!]    [1L]    [7z]    [Z^]    [6x] 
+   [%c]    [C5]    [$v] [q6b4ipljsgc1t%8e] [4$e51%gi!6sj@pq32t]    [3b]    [V4]    [$v] 
+   [C5]    [%c]    [x6]    [Z^] [l18jbc64eqitpg%s7z]    [L1]    [!l]    [2k] 
+   [@J]    [3j]    [4H]    [h$] [41ci%qsltebgp6j8]    [5G]    [%g]    [6f] 
+   [^D]    [7d]    [S8]    [s*]    [a9] [ep4qtsb61c8ljg%i]    [(P]    [0p] 
+   [Oq]    [Qo]    [wI]    [Wi]    [ue]    [EY] [ps1c4bg8ijq6le%t]    [yr] 
+   [Tt]    [tT]    [ry]    [EY]    [eu]    [Wi]    [Iw] [jcp86qe4s1b%gilt] 
+   [oQ]    [Oq]    [0p]    [(P]    [a9]    [s*]    [8S]    [7d] 
+[1qb4pj8eg%cilts6]    [^D]    [f6]    [%g]    [5G]    [h$]    [4H]    [3j] 
+   [J@] [4tp1iqbs%cgj86le]    [2k]    [l!]    [1L]    [z7]    [^Z]    [6x] 
+   [%c]    [5C] [%846pctjieg1sblq] [c7li9sD0fwT6WEv*31jtPu%^!CoY$J2bhgVpL(Bq5QnGayr4SxIz8@kHZOde]   [^4V]   [$7v]   [5C1]   [%!c] 
+  [26x]   [^@Z]   [73z] [c%s41jgteiq6bp8l]   [L41]   [l$!]   [k52]   [J@%] 
+  [j36]   [4^H]   [7$h]   [G85] [gbs8%il4qc1jtep6] [^%6g*]  [67f9]  [D^1(] 
+ [d70!]  [S82q]  [*sQ@]  [9wa3]  [(P4W] [1psilq4je8btc%g6] [^0e$p] [qEO75] 
+[%oQr1] [6!tIw] [WiT^2] [7ye@u]  [YE83] [yu4*r] [se481t%lbpciqg6j] [it$9T^] 
+[57ItT(] [%0o1ry] [q6Y!OE] [p^eQu2] [Pi@7Ww] [IW3wa8] [4e*oQs] [qgcpsb18l4t6%jei] 
+[9SqO$E^] [dr7(5p0] [(Pt0%D1] [T6qf!a9] [sg^Qy*2] [@SY8wG7] [Wu73d8h] [eiH4D^*] 
+[gi41plejc%tqs68b] [EI9$f^j6] [o5r7%Jg(] [0tO%G1k5] [h$6lqT!p] [PyHL24Q^] [jw3a7zY@] [8uZs@WJ3] 
+[4*iS2kxe] [gs64pijtb8%qcle1] [9$!clIEd] [LoC1(r5D] [t%Of70vz] [^gqp6TVZ] [GxQP^6yb] [BaY7c%hw] 
+[u5sH8nCW] [vS$iej*] [!qg4EcSJ*i^TPBL] [J9Ibd^3E] [21T$%^@!3SE4Pgi5] [V7Dk4o(r] [$1Oltv0f] [!gTCqL5p] 
+[2zQG%ycP] [Y6hxw@Za] [3HZs^Wux] [czSje4i7] [PgS^L4JBi*TcE!q] [1IdLCE$J] [kv5Dro!l] [Otlk%2fV] 
+[T@bLJgp6] [zyjB^3PG] [naH7ZYh4] [Hu8$hxs] [cG*5ijS] [^4SBLP*cE!qiTgJ] [ICJgd^9%TEiSP] [7oDf6(vk] 
+[l1fDV0^O] [db!7pgqL] [B8zQPG2S] [na*hwZ@s] [axs9H3W] [(cePj4S] [J^E*!T4BcgLSPqi] [pC0JdE$] 
+[OD5rqvk] [QVl%tof] [TLg6bwI] [WyiBz^G] [ZheYu7n] [HYE8ux] [ycr*ji] [Li!BJ4^STEPcqg*] 
+[9^tTCIJ] [PES*iTqg] [otTv(k7] [VlOy1r0] [!qLEbpY] [Quez2PB] [aZwi@Wn] [Wswx3I] 
+[4cSoQe] [Tc^4!LiSgqBPE*J] [$CqOEd] [Dvrp05] [P%Vft(] [aTb6g9] [yBs*G^] [YnS78h] 
+[uH7d8] [*iD^j] [*^Tgc!i4qJLPSBE] [JfI96TEiSPg] [%ok(g] [G5Ol0] [hq$Lp] [z4QPH] 
+[w3jaZ] [J@Wxs] [ce2kS] [^4!*gBTJELScqiP] [dlC!E] [v1rLD] [zfVt7] [bZg^T] 
+[6BxyG] [cnhY%]  [CuH5]  [$ivj] [L*i!cgEq4B^TSJP] [3bJI64@iP2!E7^gS1T]  [4oVk]  [O$lv] 
+ [pCL5]  [cz%P]  [Z6ax]  [sZ^x]  [7zcS] [!4PL^qETBiJ*Scg]  [CLd1]  [Dlv!] 
+ [kV2f]  [Jbg@]  [3BjG]  [nH4h]   [h$H]   [5Gj] [*E4^!TcJLqSBigP] [J%giEPTS] 
+  [k6f]   [^lD]   [7dL]   [zS8]   [*Zs]   [9xa]   [Pc(] [!gES^BPTq4L*cJi] 
+  [pC0]   [vOq]   [oQV]   [bwI]   [iBW]   [une]    [EY]    [yr] 
+[!L4*^cqSBiJPETg]    [Tt] [*PqigTSE]    [Tt]    [yr]    [EY]    [ue]    [Wi] 
+   [wI]    [oQ] [P!*Eg4JiBqTcL^S]    [qO]    [p0]    [(P]    [9a]    [*s] 
+   [S8]    [7d]    [^D] [Jq4^ig!*TcPBELS] [6fgiETSP]    [%g]    [G5]    [$h] 
+   [4H]    [j3]    [@J]    [k2] [Bi^PqL*TSc!JgE4]    [!l]    [L1]    [7z] 
+   [Z^]    [6x]    [c%]    [5C]    [v$] [4!S*qEP^cgJTBLi] [21S5E^g!%4i3$c@TP]    [b3] 
+   [V4]    [$v]    [5C]    [%c]    [x6]    [^Z] [Ei*!Tq4^cgBLSPJ7z]       c 
+   [1L]    [l!]    [2k]    [J@]    [3j]    [4H]    [h$] [E4!PSJT*^gicBqL] 
+[G5SicgEPT]    [g%]    [f6]    [D^]    [d7]    [8S]    [s*]    [9a] 
+[PTg4*cL!JiqBS^E]    [(P]       c    [p0]    [Oq]    [oQ]    [Iw]    [iW] 
+   [ue]    [EY] [Ti*q^JLB!gS4PEc]    [ry] [qiT*PcgSE]    [Tt]    [tT]    [ry] 
+   [YE]    [ue]    [Wi]    [Iw] [4B!LcP^*qgEiJST]    [Qo]       c    [Oq] 
+   [0p]    [P(]    [9a]    [s*]    [S8]    [d7] [T*c!^4PJBiqgELS] [D^EiPcSTg] 
+   [f6]    [g%]    [G5]    [$h]    [4H]    [j3]    [@J] [4BicSPL^!*TgJqE] 
+   [2k]       c    [!l]    [L1]    [7z]    [^Z]    [x6]    [c%] 
+   [5C] [qPSiT^L!c4*gEJB] [vb3$^1TE!7PS4c@gi62]    [4V]    [$v]    [C5]    [c%]    [6x] 
+   [Z^]    [7z] [!B4^ELJPSi*qgTc]    [L1]       c    [l!]    [k2]    [@J] 
+   [j3]    [4H]    [h$]    [G5] [q^4iS!cJPg*LETB] [%gSEciPT]    [6f]    [^D] 
+   [d7]    [8S]    [*s]    [9a]    [(P] [T^g!SqPBc*iJE4L]    [p0]       c 
+   [Oq]    [Qo]    [wI]    [Wi]    [ue]    [EY]    [yr] [^!LSEqPgB*iJ4cT] 
+   [tT] [gPS*qicET]    [Tt]    [ry]    [YE]    [ue]    [Wi]    [wI] 
+   [oQ] [S4g^c*!LPEiqJBT]    [qO]       c    [0p]    [(P]    [9a]    [*s] 
+   [S8]    [d7]    [D^] [L^*JS4Pq!BTEcgi] [f6PEgcSiT]    [g%]    [G5]    [h$] 
+   [H4]    [j3]    [J@]    [2k] [Bqc!i4P^JSEL*gT]    [!l]       c    [1L] 
+   [z7]    [Z^]    [x6]    [%c]    [C5]    [$v] [Sg4E^Pc!BL*JTqi] [b3^i%ST@g425cP$1!E] 
+   [V4]    [$v]    [5C]    [c%]    [6x]    [Z^]    [z7] [*SJqP^!gBEicLT4] 
+   [L1]       c    [!l]    [2k]    [@J]    [j3]    [H4]    [$h] 
+   [5G] [B4^gJi!TcL*EqPS] [%gPcDGYEI]    [f6]    [^D]    [d7]    [8S]    [*s] 
+   [a9]    [(P] [^*4LcEBS!JqTigP]    [0p]       c    [qO]    [oQ]    [wI] 
+   [Wi]    [ue]    [EY]    [ry] [cg^LPiqESBJT4!*]    [tT] [g*EPSqTi]    [tT] 
+   [yr]    [YE]    [ue]    [Wi]    [Iw]    [oQ] [B^g*T!JiLP4SqcE]    [qO] 
+   [0p]    [(P]    [9a]    [s*]    [8S]    [7d]    [^D] [Lgi^!ETqB4S*JcP] 
+[f6tEPsu]    [g%]    [G5]    [h$]    [H4]    [j3]    [J@]    [2k] 
+[E4PSL*cq^!BigJT]    [!l]    [1L]    [z7]    [Z^]    [6x]    [c%]    [C5] 
+   [v$] [i!^E4SPJgTcq*BL] [3b2g@4PSTE7^i!61]    [4V]    [$v]    [C5]    [%c]    [x6] 
+   [Z^]    [z7] [Sic4!PTLE^qB*gJ]    [1L]    [l!]    [k2]    [@J]    [3j] 
+   [H4]    [$h]    [5G] [TPicgL!S^J4Bq*E]    [g%]    [f6]    [D^]    [d7] 
+   [8S]    [s*]    [a9]    [(P] [^*giqJ!SBEc4PLT]    [p0]    [Oq]    [Qo] 
+   [Iw]    [iW]    [eu]    [EY]    [ry] [q!^4PTic*JELBgS]    [tT] [q*iTgSPJ] 
+   [tT]    [ry]    [EY]    [eu]    [Wi]    [wI]    [Qo] [4*cEL^PTJBg!Siq] 
+   [Oq]    [0p]    [P(]    [9a]    [s*]    [S8]    [d7]    [D^] 
+[!E4LSTB^Pq*icgJ] [6fSLiJgP]    [g%]    [G5]    [$h]    [H4]    [3j]    [@J] 
+   [k2] [E*T4^PqgSJ!BciL]    [l!]    [1L]    [z7]    [^Z]    [6x]    [c%] 
+   [5C]    [v$] [SgcP!T4^LJBi*Eq] [P$^5J43%2Sc@1!Lg]    [b3]    [V4]    [v$]    [5C] 
+   [c%]    [6x]    [^Z] [cqT4SLP^!igJB*E7z]    [L1]    [!l]    [2k]    [J@] 
+   [j3]    [H4]    [$h] [Sq4EJ^ciLP*!gTB]    [5G]    [%g]    [6f]    [^D] 
+   [7d]    [8S]    [s*]    [9a] [^i4BESgqTJ!cL*P]    [P(]    [0p]    [Oq] 
+   [oQ]    [wI]    [iW]    [eu]    [YE] [BgJT*E4cLq^!PSi]    [yr] [PTicLE*SqHgB] 
+   [tT]    [Tt]    [ry]    [YE]    [eu]    [iW]    [Iw] [4J^B*gTPiLSEq!c] 
+   [oQ]    [Oq]    [p0]    [P(]    [a9]    [s*]    [8S]    [7d] 
+[^c!gSBi4TEPqJ*L]    [^D]    [f6]    [g%]    [G5]    [$h]    [4H]    [j3] 
+   [@J] [*S4icP!gJ^qLTBE]    [k2]    [!l]    [L1]    [z7]    [Z^]    [6x] 
+   [c%]    [C5] [qSB4E!ci*T^gPLJ] [b3v$7!641S2gB@LcJ^]    [4V]    [$v]    [C5]    [%c] 
+   [x6]    [Z^]    [z7] [*S!BEJT^q4PLigc]    [L1]    [!l]    [k2]    [@J] 
+   [j3]    [4H]    [h$]    [5G] [E4!T*P^iLSBqJgc]    [%g]    [f6]    [D^] 
+   [7d]    [8S]    [s*]    [a9]    [(P] [!P*4L^TESigBqcJ]    [0p]    [qO] 
+   [oQ]    [Iw]    [iW]    [eu]    [EY]    [ry] [qJ^S!E*i4LcTPBg]    [Tt] 
+[E*PqTi]    [tT]    [ry]    [EY]    [ue]    [Wi]    [wI]    [Qo] 
+[BgJE4Sc^iT*!PLq]    [qO]    [p0]    [(P]    [9a]    [s*]    [S8]    [d7] 
+   [D^] [BPLS*cE4J^q!giT]    [f6]    [g%]    [5G]    [$h]    [4H]    [3j] 
+   [@J]    [k2] [4!qiBPES^g*cJTL]    [!l]    [1L]    [7z]    [Z^]    [x6] 
+   [%c]    [5C]   [vb$] [@EDPG$C(^IZYQJB] [V$5@42ZDC%GB!(1J3]       v       C       c 
+      x       Z       z [ZD^J($YC@EBGQPI]       L       l       k       J 
+      j       H       h       G [$EPD@B^ZGYJIQ(C] [gcSLJB]       f       D 
+      d       S       s       a       P [D^$ZCYIG@(PBJQE]       p       O 
+      o       I       i       u       Y       y [G$Q@C(YBJPD^IEZ]       T 
+[CPIEGZD(Js8YQB]       t       r       E       e       W       w       Q 
+[CIPYE$QG^(@ZDBJ]       q       0       (       9       *       8       7 
+      ^ [PQ$C@^EIGJDZ(BY] [6CZJDBG]       %       5       $       4       3 
+      @       2 [@(GJBQ$CIP^ZYDE]       !       1       7       ^       6 
+      %       5       $ [qSTLP4!E^BcJi*g] [b461^LgBS!J2c*@37]       V       v       C 
+      c       x       Z [!4*^qPgJLiEBScT]       z       L       l       k 
+      J       j       H       h [T4^qiLJ!gc*ESBP] [GCBJDZs]       g       f 
+      D       d       S       s       a [^4P!icBSqTgL*JE]       P       p 
+      O       o       I       i       u       Y [!T4^JgBPciSqLE*]       y 
+[SgiP*^EqcTLJ]       T       t       r       E       e       W       w 
+[PcgS^J!*i4BETLq]       Q       q       0       (       9       *       8 
+      7 [SEJi!*4PT^cBLqg] [^cSJLBg]       6       %       5       $       4 
+      3       @ [B!4^JciPg*LqEST]       2       !       1       7       ^ 
+      6       %       5 [ZtYQ1G8@($ClsDI] [b$2@s1D35Z8%Gl4!C]       V       v       C 
+      c       x       Z [C1@Gt$ZQs8ID(Yl]       z       L       l       k 
+      J       j       H       h [tYl@$8CGDsZ(1IQ] [GgcJLPS]       g       f 
+      D       d       S       s       a [8GDY@$1(CtIsZlQ]       P       p 
+      O       o       I       i       u       Y [1$lGD@8IC(ZtsQY]       y 
+[l6cgpY8j(tes]       T       t       r       E       e       W       w 
+[Q1G$@8CIsYZDtl(]       Q       q       0       (       9       *       8 
+      7 [@l$Q1ts(C8YZGDI] [^CZlGsD]       6       %       5       $       4 
+      3       @ [@Z1GDC($Ist8lYQ]       2       !       1       7       ^ 
+      6       %       5 [4gPLiT!S^Jc*Eq] [b$^32@74cg1SPL!J6]       V       v       C 
+      c       x       Z [Ec4^J!P*LgSTiq]       z       L       l       k 
+      J       j       H       h [LTi*c4q^gSJE!P] [GiPLgJS]       g       f 
+      D       d       S       s       a [T4gc^E*JSLqP!i]       P       p 
+      O       o       I       i       u       Y [cL4*qPTi^!SgJE]       y 
+[qET*iuPSg^J]       T       t       r       E       e       W       w 
+[*cEJ4i!qPgLTS^]       Q       q       0       (       9       *       8 
+      7 [TE!^c4q*iPJLgS] [^EgiPST]       6       %       5       $       4 
+      3       @ [!^LqiTJS4P*gEc]       2       !       1       7       ^ 
+      6       %       5 [CGPS!L*JE^BQ$TI] [$b625e4(@tL1!J%3pGCYB8]       V       v       C 
+      c       x       Z [Q$^G*!LTSJIECPB]       z       L       l       k 
+      J       j       H       h [SQCE*ITJL$!P^GB] [GLgcBJ]       g       f 
+      D       d       S       s       a [C!T$^P*IJLGSQBE]       P       p 
+      O       o       I       i       u       Y [E$B^J*CGP!LITSQ]       y 
+[BGJDZC]       T       t       r       E       e       W       w 
+[$^LQ!*GBIPSJETC]       Q       q       0       (       9       *       8 
+      7 [TJ!IL^EBQ$SG*PC] [^gJBcSL]       6       %       5       $       4 
+      3       @ [CETQ^IB$!SPLG*J]       2       !       1       7       ^ 
+      6       %       5 [^DJPIZG@$Q(YBCE] [$bG32l6Z17@4D!s^C]       V       v       C 
+      c       x       Z [@$CBDQ^JI(YEPGZ]       z       L       l       k 
+      J       j       H       h [QGYD($^@BZPCIEJ] [GPLgcJS]       g       f 
+      D       d       S       s       a [Y^Z@PDEI$(CGJQB]       P       p 
+      O       o       I       i       u       Y [ZQPE^$DCI@G(BYJ] [epq31H%$769^ZiylhLc8JoDx2fP!Et*dOnwa@Tu5Ws0vQkr4SgBjbGVC(YIz] 
+      T       t       r       E       e       W       w [$CP(DE^YIZ@JGQB] 
+      Q       q       0       (       9       *       8       7 
+[$BDEJIYP@C^(QGZ] [^CGZslD]       6       %       5       $       4       3 
+      @ [^YCZ$GPIEQ@(BDJ]       2       !       1       7       ^       6 
+      %       5 [xS8$5Lz!OP6^C%V1sf4B3I*oyu7Y@0gGr(p2acbdwJlHTekiWjZtqvDQhnE9] [$%^4qTPL3SgEJ@c5*1!2i]       b [j3594ukivq2wc8o0spa] [63v7j8cwdk25se] [e1c72sk3jv8dw] 
+[l6i37c8ew5josp1a2zkvx] [23iuw4vecjk785] [3ue48cikjv52w7] [wj57iv123eda8sc6opk] [etuwyir]    [ui]    [iu] [ewuityr] 
+   [ui]    [iu] [werutyi]       D       S       s       D       S 
+      s       P       S       s       P       p       s       P 
+      i       T       E [1gtDGsIQiCY8]  [iqcg] [Yi^(ZDgP]  [L*TS] [le6ptg8YiDs] 
+ [JEP^] [D8tgs6j1peYi]  [l8st] [^PgTSEJi] [7*fZ2a!sGp4V@b63SilCox5BOh1$DPIY9rt%^ue(WdEn0QLvJgcwHkyjqz8T] [$LfOT%ZgGq83*(Dlke9z5j4hyYE^6dJpWwuosH7SQrPit0Icax]       1 
+]]
