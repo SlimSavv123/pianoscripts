@@ -1,10 +1,73 @@
 shared.stop = true -- stops the player at any time if true
 -- CONFIG:
-shared.ftime = 3*32 -- time in seconds for the song to finish (extended by |)
+shared.ftime = 3*06 -- time in seconds for the song to finish (extended by |)
 shared.delay = nil -- delay overides the ftime
 shared.tempo = nil -- delay overides the delay
 shared.nospacedelay = true
 
 shared.scr = [[
-[etuf] d f d [ryof] d [tuod] s j h f d s [tipd] f f j h f d s [tipd] f f s s s s d [etus] s s s s [ryos] d [tuoa] h h h f f f d d [tipd] s s s s p s p s d [tip] s s s [ryos] d [etus] s s s s [ryos] d [tuoa] h h h f f f d d [tipd] s s s s p s p s d [tip] s [ryo] h [etuj] h [etuj] h [etuj] h [ryo] [tuo] [tuo] h [tuoj] k [tuoj] h [tipf] [tipd] [tipj] k [tipj] h [tipf] [tipd] [tips] [ryo] h [etuj] h [etuj] h [etuj] h [ryo] [tuo] [tuo] h [tuoj] k [tuoj] h [tipf] [tipd] [tipj] k [tipj] h [tipf] [tipd] [tips] e [tus] [tus] [tus] [ryd] w [ef] 8 [wts] [wts] [wts] [toh] w [uf] q [tis] [tis] [tisj] k [yi] [wj] [uh] [qf] [ti] d [ti] [tis] [tia] w [uo] [ef] [tud] [tu] f [tud] [ry] [wf] [ed] [8d] [wts] [wt] j [wth] f [to] [wd] [us] [qd] f [tif] [ti] j [tih] f [yi] [wd] [us] [qd] f [tif] [ti] s [ti] s [tis] [ws] [ud] [6es] s s s [7rs] s d [8ta] h h h f f [0uf] d d [qid] s s s s p s p [qis] d [qi] s s s [ws] d [6es] s s s [7rs] s d [8ts] h h h f f [0uf] d d [qid] s s s s p s p [qis] d [qi] s [wo] o [etuj] h [etuj] h [etuj] h [ryo] [tuo] [tuo] h [tuoj] k [tuoj] h [tipf] [tipd] [tipj] k [tipj] h [tipf] [tipd] [tips] [ryo] h [etuj] h [etuj] h [etuj] h [ryo] [tuo] [tuo] h [tuoj] k [tuoj] h [tipf] [tipd] [tipj] k [tipj] h [tipf] [tipd] [tips] e [tus] [tus] [tus] [ryd] w [ef] 8 [wts] [wts] [wts] [toh] w [uf] q [tis] [tis] [tisj] k [yi] [wj] [uh] [qf] [ti] d [ti] [tis] [tia] w [uo] [ef] [tud] [tu] f [tud] [ry] [wf] [ed] [8d] [wts] [wt] j [wth] f [to] [wd] [us] [qd] f [tif] [ti] j [tih] f [yi] [wd] [us] [qd] f [tif] [ti] s [ti] [pj] [ti] [wak] [tipsl] j [dz] [tuoak] j k j h [sl] [sl] [ryofx] z [dz] x z [etusl] j [ryo] [pj] [ak] [tipsl] j [dz] [tuoak] j k j h [sl] [sl] [ryofx] z [dz] x z l j [ef] [tud] e [tuf] [ed] [tu] [ef] [tud] [td] [uos] t [uoj] [th] [uof] [td] [uos] [qd] f [tif] q [tij] [qh] [tif] [qd] [tis] [qd] f [tid] q [tis] q [ti] w [ry] [ef] [tud] e [tuf] [ed] [tu] [ef] [tud] [td] [uos] t [uoj] [th] [uof] [td] [uos] [qd] f [tif] q [tij] [qh] [tif] [qd] [tis] [qd] f [tid] q [tis] q [ti] w [ryk] [ej] [tuh] [ej] [tuh] [ej] [tuh] r [yo] t [uo] t [uoh] [tj] [uok] [tj] [uoh] [qf] [ti] [qd] [ti] [qj] [tik] [qj] [tih] [qf] [ti] [qd] [ti] [qs] [ti] w [ryh] [ej] [tuh] [ej] [tuh] [ej] [tuh] r [yo] t [uo] t [uoh] [tj] [uok] [tj] [uoh] [qf] [ti] [qd] [ti] [qj] [tik] [qj] [tih] [qf] [ti] [qd] [ti] s e [tus] [tus] [tus] [ryd] w [ef] 8 [wts] [wts] [wts] [toh] w [uf] q [tis] [tis] [tisj] k [yi] [wj] [uh] [qf] [ti] d [ti] [tis] [tia] w [uo] [ef] [tud] [tu] f [tud] [ry] [wf] [ed] [8d] [wts] [wt] j [wth] f [to] [wd] [us] [qd] f [tif] [ti] j [tih] f [yi] [wd] [us] [qd] f [tif] [ti] s [ti] [pj] [ti] [wak] [etusl] j [ryodz] [tuoak] j k j h [sl] [sl] [tipfx] z [dz] x z [tipsl] j
+[8wu] o p s p o u o p s p o
+[60t] o p s p o t o p s p o
+[9ey] i p d p i y i p d p i
+[59o] a d g d a o a d g d a
+[8wu] o p s p o u o p s p o
+[60t] o p s p o t o p s p o
+[9ey] i p d p i y i p d p i
+[59o] a d g d a o a d g d a
+[8wu] o p s p o
+[8wu] o p s p o
+[60t] o p s p o
+[60t] o p s p o
+[9ey] i p d p i
+[9ey] i p d p i
+[59o] a d g d a
+[59o] a d g d a
+[8wu] o p s p o
+[8wu] o p s p o
+[60t] o p s p o
+[60t] o p s p o
+[9ey] i p d p i
+[9ey] i p d p i
+[59o] a d g d a
+[59o] a d g d a
+[59wo] a d g d a
+[59woad]| |
+[qi] 0 9 8 7 6
+[8wu] o p s p o u o p s p o
+[60t] o p s p o t o p s p o
+[9ey] i p d p i y i p d p i
+[59o] a d g d a
+[oh] [ak] [dz] [gc] [dz] [ak]
+[8wu] o p s p o u o p s p o
+[60t] o p s p o t o p s p o
+[9ey] i p d p i y i p d p i
+[59oh] [ak] [dz] [gc] [dz] [ak]
+[oh] [ak] [dz] [hv] [dz] [ak]
+[8wu] o p s p o
+[8wu] o p s p o
+[60t] o p s p o
+[60t] o p s p o
+[9ey] i p d p i
+[9ey] i p d p i
+[59o] a d g d a
+[59o] a d g d a
+[8wuf] o p s p o
+[8wuf] o p s p o
+[60ts] o p s p o
+[60ts] o [pg] [sf] [pd] [os]
+[9eyd] i p d p i
+[9eyd] i p d p i
+[59oh] a d g d a
+[59woh] a d g d a [59woad]| |
+[tuos] o p s p o u o p s [ph]f[oh]
+[tups] o p s p o t o p s [ph]f[oh]
+[yipd] i p d p i y i p d [pf]d[if]
+[wryo] a d g d a o a d g d a
+[9yd] [0uf]| [qig] [woh]|
+u o p s p o u o p s p o
+t o p s p o t o p s p o
+y i p d p i y i p d p i
+[9wryo] a d [9wryg] d a
+[9wryo] a d [9wryg] d a
+[9wryo] a d [9wryg] d a [woad]
 ]]
